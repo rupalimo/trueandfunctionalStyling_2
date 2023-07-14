@@ -694,6 +694,9 @@ font-weight: 400;
 	margin: 0.25em;
 	
 }
+.creditpage section li div:first-of-type {
+	margin-top:2px;
+}
 
 .creditpage section h5 {
 	text-transform: uppercase;
