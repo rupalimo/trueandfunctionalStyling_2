@@ -632,6 +632,7 @@ border: 2px solid white;
 	display: flex;
 	flex-direction: column;
 	padding-right: 12px;
+	line-height: 1.25em;
 }
 
 .creditpage section div.titleblock {
@@ -666,6 +667,33 @@ border: 2px solid white;
 .creditpage section p {
 	text-align: justify;
 }
+.creditpage section em {
+line-height: 1.25em;
+font-style: normal;
+font-family: var(--serif-text);
+font-weight: 400;
+}
+
+.creditpage section i {
+	font-family: var(--serif-text);
+	font-style: normal;
+	font-weight: 600;
+}
+
+.creditpage section ul {
+	margin-top: 0.5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.creditpage section li {
+	display: grid;
+  grid-template-columns: auto auto;
+	grid-gap: 0.5em;
+	text-align: justify;
+	margin: 0.25em;
+	
+}
 
 .creditpage section h5 {
 	text-transform: uppercase;
@@ -691,12 +719,6 @@ border: 2px solid white;
 
 .creditpage section span img {
 	margin: 1em 2em 1em 0.5em;
-}
-
-.creditpage section i {
-	font-family: var(--serif-text);
-	font-style: normal;
-	font-weight: 600;
 }
 
 /* pixel css for small images */
