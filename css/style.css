@@ -6,6 +6,7 @@
 	--serif-text: 'SSerif', 'Times New Roman', serif;
 	--text-color: #000;
 	--green-color: #33ff00;
+	--darkgreen-color: #06b506;
 	--fade-in-effect: fadein 400ms;
 	--green-shadow: rgba(51, 255, 0, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 	font-size: calc(0.65em + 0.15vw);
@@ -192,10 +193,10 @@ right: 27em;
 z-index: 99;
 }
 
-div.item_1 .container button, div.item_6 div button {
+div.item_1 .container button, div.item_6 div button, .audio-player {
 	background-color: white;
   border-color: var(--green-color);
- color: rgb(6, 181, 6);
+ color: var(--darkgreen-color);
  margin-bottom: 0.25em;
 }
 
@@ -207,7 +208,7 @@ div.item_1 .container button:nth-child(2) {
 	border-left: none;
 }
 
-div.item_1 .container button:nth-of-type(3), div.item_6 div button {
+div.item_1 .container button:nth-of-type(3), div.item_6 div button, .audio-player .controls .audio-icon button {
 	display: inline-flex;
   flex-direction: row;
   align-content: center;
@@ -215,7 +216,7 @@ div.item_1 .container button:nth-of-type(3), div.item_6 div button {
 	margin-left: 0.25em;
 }
 
-div.item_1 .container button:nth-of-type(3) i {
+div.item_1 .container button:nth-of-type(3) i, div.item_6 div button i, .audio-player .controls .audio-icon button i {
 	line-height: 0;
 	font-size: 1.25em;
 }
@@ -268,7 +269,7 @@ div.item_2 span img+img {
 margin-left: -125px;
 }
 
-div.item_2 span img:hover {
+div.item_2 span img:hover, div.item_3 img:nth-of-type(4):hover, div.item_7 div img+img:hover, div.item_8 a img:hover {
 	z-index: 4;
 	box-shadow: var(--green-shadow);
 	transition: 0.175s linear;
@@ -286,10 +287,10 @@ div.item_3, div.item_4, div.item_5, .item_9 {
 	align-items: center;
 }
 
-div.item_3 img:nth-of-type(4):hover {
+/* div.item_3 img:nth-of-type(4):hover {
 		box-shadow: var(--green-shadow);
 	transition: 0.175s linear;
-}
+} */
 
 div.item_3 img:nth-of-type(2) {
 	margin-left: -4em;
@@ -355,10 +356,7 @@ div.item_7 img {
 div.item_7 img:nth-of-type(1) {
 
 }
-div.item_7 div img:nth-of-type(2):hover {
-	box-shadow: var(--green-shadow)
-	transition: 0.175s linear;
-}
+
 
 div.item_7 img:nth-of-type(3) {
 
@@ -366,9 +364,9 @@ div.item_7 img:nth-of-type(3) {
 
 
 /* draggable */
-div.item_8 a img:hover {
+/* div.item_8 a img:hover {
 box-shadow: var(--green-shadow);
-}
+} */
 
 .goatdrag {
 width: 100%;
@@ -406,6 +404,7 @@ padding: 3em 0;
 .goat_img:hover {
 	z-index: 5;
     filter: drop-shadow(1px 3px 3px rgba(51, 255, 0, 0.12)) drop-shadow(1px 3px 3px rgba(14, 30, 37, 0.32));
+		filter: drop-shadow(2px 2px 0px rgba(51, 255, 0, 0.12)) drop-shadow(2px 2px 1px rgba(14, 30, 37, 0.32));
 		filter: drop-shadow(1px -3px -3px rgba(51, 255, 0, 0.12)) drop-shadow(1px -3px -3px rgba(14, 30, 37, 0.48));
 }
 
@@ -463,29 +462,29 @@ border: 2px solid white;
 /* audio styling */
 
 .audio-player {
-     height: 50px;
-    width: 350px;
-    box-shadow: rgba(0, 0, 0, 0.667) 0px 0px 20px 0px;
-    font-family: arial;
-    color: white;
-    font-size: 0.75em;
-    display: grid;
-    grid-template-rows: 6px auto;
-    background: rgb(68, 68, 68);
-    overflow: hidden;
-	position: fixed;
-	bottom: 1em;
-	right: 3em;
+	height: 3em;
+  width: 16vw;
+  color: var(--darkgreen-color);
+  display: grid;
+  grid-template-rows: 6px auto;
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  bottom: 1em;
+  right: 3em;
+  border: 1.5px outset var(--green-color);
 }
+
 .audio-player .timeline {
-  background: white;
+  background: #09ff0041;
   width: 100%;
   position: relative;
   cursor: pointer;
-  box-shadow: 0 2px 10px 0 #0008;
+  border-bottom: 1px dotted;
 }
+
 .audio-player .timeline .progress {
-  background: coral;
+  background: var(--green-color);
   width: 0%;
   height: 100%;
   transition: 0.25s;
@@ -494,51 +493,46 @@ border: 2px solid white;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0 20px;
+  padding: 0 1em;
 }
 .audio-player .controls > * {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.audio-player .controls .toggle-play.play {
-  cursor: pointer;
+.audio-player .controls .audio-icon {
   position: relative;
-  left: 0;
-  height: 0;
-  width: 0;
-  border: 7px solid #0000;
-  border-left: 13px solid white;
+	border: none;
 }
+
+.controls .audio-icon button {
+	background-color: white;
+  border: none;
+ color: var(--darkgreen-color);
+
+}
+
+.audio-player .controls .audio-icon button i {
+} 
+
+.audio-player .controls .audio-icon button:hover {
+	 cursor: pointer;
+}
+
 .audio-player .controls .toggle-play.play:hover {
-  transform: scale(1.1);
+
 }
 .audio-player .controls .toggle-play.pause {
-  height: 15px;
-  width: 20px;
-  cursor: pointer;
-  position: relative;
+
 }
 .audio-player .controls .toggle-play.pause:before {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  background: white;
-  content: "";
-  height: 15px;
-  width: 3px;
+
 }
 .audio-player .controls .toggle-play.pause:after {
-  position: absolute;
-  top: 0;
-  right: 8px;
-  background: white;
-  content: "";
-  height: 15px;
-  width: 3px;
+
 }
 .audio-player .controls .toggle-play.pause:hover {
-  transform: scale(1.1);
+
 }
 .audio-player .controls .time {
   display: flex;
@@ -632,11 +626,13 @@ border: 2px solid white;
 	display: flex;
 	flex-direction: column;
 	padding-right: 12px;
+	line-height: 1.25em;
 }
 
 .creditpage section div.titleblock {
 	height: 120vh;
 	margin-top: 35%;
+	cursor: default;
 }
 .creditpage section div.titleblock h1 {
 	margin-top: 0;
@@ -659,10 +655,41 @@ border: 2px solid white;
 .creditpage section object,
 .creditpage section h5 {
 	z-index: 1;
+	cursor: default;
 }
 
 .creditpage section p {
 	text-align: justify;
+}
+.creditpage section em {
+line-height: 1.25em;
+font-style: normal;
+font-family: var(--serif-text);
+font-weight: 400;
+}
+
+.creditpage section i {
+	font-family: var(--serif-text);
+	font-style: normal;
+	font-weight: 600;
+}
+
+.creditpage section ul {
+	margin-top: 0.5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.creditpage section li {
+	display: grid;
+  grid-template-columns: auto auto;
+	grid-gap: 0.5em;
+	text-align: justify;
+	margin: 0.25em;
+	
+}
+.creditpage section li div:first-of-type {
+	margin-top:2px;
 }
 
 .creditpage section h5 {
@@ -689,12 +716,6 @@ border: 2px solid white;
 
 .creditpage section span img {
 	margin: 1em 2em 1em 0.5em;
-}
-
-.creditpage section i {
-	font-family: var(--serif-text);
-	font-style: normal;
-	font-weight: 600;
 }
 
 /* pixel css for small images */
