@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+<style>
+  video {
+    width: 40em;
+    height: auto;
+  }
+</style>
+
+</head>
+<button id="play-pause-button">play/pause</button>
+<video id="video-background-first-video" loop>
+    <source src="../assets/vid/video_clip_test.mp4" type="video/mp4">
+</video>
+<video id="video-background-second-video" loop>
+    <source src="../assets/vid/video_clip_test.mp4" type="video/mp4">
+</video>
+<video id="video-background-third-video" loop>
+    <source src="../assets/vid/video_clip_test.mp4" type="video/mp4">
+</video>
+
+<p>need to integrate cloning feature, and visual toggle of play/pause button</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>$('#play-pause-button').click(function() {
+    var mediaVideo = $("#video-background-first-video, #video-background-second-video, #video-background-third-video");
+    mediaVideo.each(function (k, v) {
+      if (v.paused) {
+        v.play();
+      } else {
+        v.pause();
+      }
+    })
+  });</script>

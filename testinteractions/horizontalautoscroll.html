@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>true and functional</title>
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href='../css/style.css'>
+</head>
+<body>
+<div class="container" id="horizontalscroll">
+           <div class="item">
+             Item content
+           </div>
+           <div class="item">
+             Item content
+           </div>
+           <div class="item">
+             Item content
+           </div>
+           <div class="item">
+             Item content
+           </div>
+           <div class="item">
+             Item content
+           </div>
+           <div class="item">
+             Item content
+           </div>
+        </div>
+        <div id="">
+          <p>vertical scroll underneath</p>
+          <img src="../assets/logos/Oakville Galleries_logotype_300px.jpg">
+        </div>
+
+<script>
+    const flavoursContainer = document.getElementById('horizontalscroll');
+const flavoursScrollWidth = flavoursContainer.scrollWidth;
+
+window.addEventListener('load', () => {
+  self.setInterval(() => {
+    if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+      flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+    }
+  }, 21);
+});
+</script>
+</body>

@@ -1,0 +1,70 @@
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: row;
+    }
+
+    div.block {
+      max-height: 40em;
+      width: 7.6em;
+      overflow-y: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      height: 100%;
+    }
+
+    img {
+      width: 10em;
+      height: 10em;
+    }
+
+    .test {
+      image-rendering: optimizeSpeed;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-crisp-edges;
+      image-rendering: -webkit-crisp-edges;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+      height: 40em;
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- isn't a true "endless scroll" but rather a lil cloner -->
+  <div class="block" id="container">
+    <ul data-current="0">
+      <li>
+        <img class="test" src="../assets/img/tiny/POLITICS_V_ECONOMICS_1.jpeg">
+      </li>
+    </ul>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var div = document.getElementById("container");
+      div.addEventListener("scroll", function () {
+        var max_scroll = this.scrollHeight - this.clientHeight;
+        var current_scroll = this.scrollTop;
+        var bottom = 100;
+        if (current_scroll + bottom >= max_scroll) {
+          var ul = document.getElementsByTagName("ul")[0];
+          var current = parseInt(ul.dataset.current, 10);
+          var li = document.getElementsByTagName("li")[current];
+          var new_li = li.cloneNode(true);
+          ul.appendChild(new_li);
+          ul.dataset.current = current + 1;
+        }
+      });
+    });
+  </script>
+</body>

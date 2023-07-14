@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <style>
+        html, body {
+  overflow:hidden;
+  
+}
+
+.img {
+  position:absolute;
+  width:200px;
+  height:200px;
+  transition-timing-function: ease-out;
+  
+}
+.img-1 {
+  background: url("https://storage.googleapis.com/stmdf-production/2023/05/AFRH-21085-163-250x333.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  transition-duration: 1000ms;
+}
+
+.img-2 {
+  background: url("https://storage.googleapis.com/stmdf-production/2023/05/AFRH-21085-163-250x333.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  transition-duration: 800ms;
+}
+
+.img-3 {
+  background: url("https://storage.googleapis.com/stmdf-production/2023/05/AFRH-21085-163-250x333.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  transition-duration: 600ms;
+}
+
+.img-4 {
+  background: url("https://storage.googleapis.com/stmdf-production/2023/05/AFRH-21085-163-250x333.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  transition-duration: 400ms;
+}
+
+.img-5 {
+  background: url("https://storage.googleapis.com/stmdf-production/2023/05/AFRH-21085-163-250x333.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  transition-duration: 200ms;
+}
+
+
+section {
+  
+  height:100vh;
+  width: 100vh;
+}
+    </style>
+  </head>
+  <body>
+    
+    <div class="img-1 img"></div>
+    <div class="img-2 img"></div>
+    <div class="img-3 img"></div>
+    <div class="img-4 img"></div>
+    <div class="img-5 img"></div>
+    
+    <script>    const img1 = document.querySelector(".img-1");
+      const img2 = document.querySelector(".img-2");
+      const img3 = document.querySelector(".img-3");
+      const img4 = document.querySelector(".img-4");
+      const img5 = document.querySelector(".img-5");
+
+      document.addEventListener("mousemove", e => {
+        img1.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img2.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img3.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img4.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+        img5.setAttribute(
+          "style",
+          "top :" + (e.pageY - 225) + "px; left: " + (e.pageX - 200) + "px"
+        );
+      });
+    </script>
+    
+  </body>
+  </html>

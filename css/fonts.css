@@ -1,0 +1,47 @@
+/* font imports here */
+
+@font-face {
+	font-family: 'Sserif';
+	src: url('../assets/fonts/Texturina-VariableFont_opsz\,wght.ttf')
+		format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SSans-sserif';
+	src: url('../assets/fonts/AUTHENTICSans-90.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SSans-sserif-bold';
+	src: url('../assets/fonts/AUTHENTICSans-Condensed-130.woff') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* backup serif options */
+
+@font-face {
+	font-family: 'DM-Mono';
+	src: url('../assets/fonts/DMMono-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HappyTimes';
+	src: url('../assets/fonts/happy-times-NG_regular_master_web.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'VG5000';
+	src: url('../assets/fonts/VG5000-Regular_web.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

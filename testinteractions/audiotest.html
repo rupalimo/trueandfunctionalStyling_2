@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head></head>
+
+<body>
+
+    <p>
+        <audio id="my-audio" controls preload="metadata">
+            <source src="http://jPlayer.org/audio/mp3/Miaow-07-Bubble.mp3" type="audio/mpeg">
+            <source src="http://jPlayer.org/audio/ogg/Miaow-07-Bubble.ogg" type="audio/ogg">
+        </audio>
+    </p>
+    <p>
+        <button id="jump">Jump to 7</button>
+        <button id="jump14">Jump to 14</button>
+        <button id="playme">Play/Pause Video</button>
+    </p>
+    <script>
+var myvideo = document.getElementById('my-audio'),
+    playbutton = document.getElementById('playme'),
+    jumplink = document.getElementById('jump');
+    jump14link = document.getElementById('jump14')
+
+jumplink.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime = 7;
+    myvideo.play();
+}, false);
+
+jump14link.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.play();
+    myvideo.pause();
+    myvideo.currentTime = 14;
+    myvideo.play();
+}, false);
+
+
+    </script>
+</body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+    video {
+        width: 400px;
+    }
+</style>
+</head>
+<body>
+    <button id="add">CLONE</button>
+    <div class="container">
+        <div id="upload"><video loop>
+            <source src="../assets/vid/video_clip_test.mp4" type="video/mp4">
+        </video></div>
+        
+    </div>
+    
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+<script>
+   var cloneCount = 1;;
+   $("#click").click(function(){
+      $('#id')
+          .clone()
+          .attr('id', 'id'+ cloneCount++)
+          .insertAfter($('[id^=id]:last'))
+          .text('id ' + (cloneCount-1)); 
+   }); 
+   
+    
+   $("#add").click(function(){
+      
+     var $clone = $('#upload').clone(); 
+     
+     //$clone.attr('id',$clone.attr('id').replace(/\d+$/, function(str) { return parseInt(str) + 1; }) ); 
+     $clone.attr('id', 'upload'+ cloneCount++)
+      // Find all elements in $clone that have an ID, and iterate using each()
+     $clone.find('[id]').each(function() { 
+        //Perform the same replace as above
+        var $th = $(this);
+        var newID = $th.attr('id').replace(/\d+$/, function(str) { return parseInt(str) + cloneCount; });
+        //var newName = $th.attr('name').replace(/\d+$/, function(str) { return parseInt(str) + 1; });
+       console.log(newID);
+       //console.log(newName);
+       
+        $th.attr('id', newID);
+      });
+     
+      $clone.insertAfter($('[id^=upload]:last'))
+    });
+    </script>
+        </body>
+        </html>
