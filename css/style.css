@@ -133,7 +133,8 @@ a:hover {
 .thumbsindex {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(7, auto);
+	grid-template-rows: repeat(9, auto);
+	
 	margin: 0;
 	top: 20%;
 	right: 4em;
@@ -148,6 +149,54 @@ a:hover {
 	margin: 1px 1px 0px 0px;
 	overflow: hidden;
 }
+.thumbs:nth-of-type(15), .thumbs:nth-of-type(16) {
+grid-row: 4;
+height: 10vh;
+margin: 1px 1px 0px 0px;
+}
+
+.thumbs:nth-of-type(15) {
+	grid-column: 1 / 3;
+}
+
+.thumbs:nth-of-type(16) {
+	grid-column: 3 / 5;
+}
+
+.thumbs:nth-of-type(17), .thumbs:nth-of-type(18) {
+	grid-row: 5;
+	height: 6vh;
+
+	margin: 1px 1px 0px 0px;
+}
+
+.thumbs:nth-of-type(19), .thumbs:nth-of-type(20) {
+	grid-row: 6;
+	height: 6vh;
+	margin: 1px 1px 0px 0px;
+}
+
+.thumbs:nth-of-type(21), .thumbs:nth-of-type(22), .thumbs:nth-of-type(23), .thumbs:nth-of-type(24), .thumbs:nth-of-type(25), .thumbs:nth-of-type(26) {
+	grid-row: 7;
+	background: #d3d3d338;
+	height: 3vh;
+	margin: 1px 1px 0px 0px;
+	
+}
+
+.thumbs:nth-of-type(27), .thumbs:nth-of-type(28), .thumbs:nth-of-type(29), .thumbs:nth-of-type(30), .thumbs:nth-of-type(31), .thumbs:nth-of-type(32) {
+	grid-row: 8;
+		background: #d3d3d338;
+		height: 3vh;
+
+}
+
+.thumbs:nth-of-type(33), .thumbs:nth-of-type(34), .thumbs:nth-of-type(35), .thumbs:nth-of-type(36) {
+	grid-row: 9;
+		background: #d3d3d338;
+		height: 3vh;
+}
+
 
 .thumbs img, .thumbs video {
  -webkit-fill-available;
