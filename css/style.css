@@ -637,6 +637,7 @@ border: 2px solid white;
 .creditpage section div.titleblock {
 	height: 120vh;
 	margin-top: 35%;
+	cursor: default;
 }
 .creditpage section div.titleblock h1 {
 	margin-top: 0;
@@ -659,6 +660,7 @@ border: 2px solid white;
 .creditpage section object,
 .creditpage section h5 {
 	z-index: 1;
+	cursor: default;
 }
 
 .creditpage section p {
