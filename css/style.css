@@ -269,7 +269,7 @@ div.item_2 span img+img {
 margin-left: -125px;
 }
 
-div.item_2 span img:hover {
+div.item_2 span img:hover, div.item_3 img:nth-of-type(4):hover, div.item_7 div img+img:hover, div.item_8 a img:hover {
 	z-index: 4;
 	box-shadow: var(--green-shadow);
 	transition: 0.175s linear;
@@ -287,10 +287,10 @@ div.item_3, div.item_4, div.item_5, .item_9 {
 	align-items: center;
 }
 
-div.item_3 img:nth-of-type(4):hover {
+/* div.item_3 img:nth-of-type(4):hover {
 		box-shadow: var(--green-shadow);
 	transition: 0.175s linear;
-}
+} */
 
 div.item_3 img:nth-of-type(2) {
 	margin-left: -4em;
@@ -356,10 +356,7 @@ div.item_7 img {
 div.item_7 img:nth-of-type(1) {
 
 }
-div.item_7 div img:nth-of-type(2):hover {
-	box-shadow: var(--green-shadow)
-	transition: 0.175s linear;
-}
+
 
 div.item_7 img:nth-of-type(3) {
 
@@ -367,9 +364,9 @@ div.item_7 img:nth-of-type(3) {
 
 
 /* draggable */
-div.item_8 a img:hover {
+/* div.item_8 a img:hover {
 box-shadow: var(--green-shadow);
-}
+} */
 
 .goatdrag {
 width: 100%;
@@ -407,6 +404,7 @@ padding: 3em 0;
 .goat_img:hover {
 	z-index: 5;
     filter: drop-shadow(1px 3px 3px rgba(51, 255, 0, 0.12)) drop-shadow(1px 3px 3px rgba(14, 30, 37, 0.32));
+		filter: drop-shadow(2px 2px 0px rgba(51, 255, 0, 0.12)) drop-shadow(2px 2px 1px rgba(14, 30, 37, 0.32));
 		filter: drop-shadow(1px -3px -3px rgba(51, 255, 0, 0.12)) drop-shadow(1px -3px -3px rgba(14, 30, 37, 0.48));
 }
 
