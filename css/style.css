@@ -646,7 +646,7 @@ border: 2px solid white;
 }
 
 .creditpage a.sticky:first-of-type {
-	border-color: var(--text-color);
+	border-color: var(--green-color);
 }
 
 .creditpage a.sticky {
