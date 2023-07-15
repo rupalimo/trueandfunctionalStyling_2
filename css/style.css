@@ -465,6 +465,14 @@ div.item_1 .container div {
 	justify-content: flex-end;
 }
 
+div.item_1 .container button {
+	cursor: pointer;
+}
+
+div.item_1 .container button:hover, div.item_6 button:hover {
+	background-color: var(--green-color);
+}
+
 div.item_1 .container .vidbutt {
 	top: 4em;
 	position: absolute;
@@ -601,8 +609,7 @@ div.item_3 img:nth-of-type(3) {
 }
 
 /* composition 04 ~~> .item_4 */
-div.item_4 {
-}
+
 
 /* composition 05 ~~> .item_5 */
 div.item_5 img:nth-of-type(1),
@@ -738,7 +745,7 @@ div.item_9 img:nth-child(3) {
 	padding: 0;
 }
 
-/* fullscreen scroll styling */
+/* fullscreen scroll styling, composition 4 ~~> .item_4*/
 #fsglitch {
 	top: 0px;
 	left: 0em;
@@ -813,26 +820,8 @@ div.item_9 img:nth-child(3) {
 	color: var(--darkgreen-color);
 }
 
-.audio-player .controls .audio-icon button i {
-}
-
 .audio-player .controls .audio-icon button:hover {
 	cursor: pointer;
-}
-
-.audio-player .controls .toggle-play.play:hover {
-}
-
-.audio-player .controls .toggle-play.pause {
-}
-
-.audio-player .controls .toggle-play.pause:before {
-}
-
-.audio-player .controls .toggle-play.pause:after {
-}
-
-.audio-player .controls .toggle-play.pause:hover {
 }
 
 .audio-player .controls .time {
@@ -843,44 +832,6 @@ div.item_9 img:nth-child(3) {
 	padding: 2px;
 }
 
-.audio-player .controls .volume-container {
-	cursor: pointer;
-	position: relative;
-	z-index: 2;
-}
-
-.audio-player .controls .volume-container .volume-button {
-	height: 26px;
-	display: flex;
-	align-items: center;
-}
-
-.audio-player .controls .volume-container .volume-button .volume {
-	transform: scale(0.7);
-}
-
-.audio-player .controls .volume-container .volume-slider {
-	position: absolute;
-	left: -3px;
-	top: 15px;
-	z-index: -1;
-	width: 0;
-	height: 15px;
-	background: white;
-	box-shadow: 0 0 20px #000a;
-	transition: 0.25s;
-}
-
-.audio-player .controls .volume-container .volume-slider .volume-percentage {
-	background: coral;
-	height: 100%;
-	width: 75%;
-}
-
-.audio-player .controls .volume-container:hover .volume-slider {
-	left: -123px;
-	width: 120px;
-}
 
 /* for overlapping vertical scroll */
 
