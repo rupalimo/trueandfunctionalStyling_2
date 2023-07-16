@@ -1245,7 +1245,7 @@ div.item_2 span {
 
 div.item_2 span img,
 div.item_3 img:nth-of-type(4),
-div.item_7 div img + img,
+div.item_7 div.page-wrapper,
 div.item_8 a img {
 	border: 1px outset rgba(207, 207, 207, 0.336);
 }
@@ -1264,7 +1264,7 @@ div.item_2 span img + img {
 
 div.item_2 span img:hover,
 div.item_3 img:nth-of-type(4):hover,
-div.item_7 div img + img:hover,
+div.item_7 div.page-wrapper:hover,
 div.item_8 a img:hover {
 	z-index: 4;
 	box-shadow: var(--green-shadow);
@@ -1338,20 +1338,28 @@ div.item_6 img {
 /* composition 07 ~~> .item_7 */
 div.item_7 {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-  align-items: flex-end;
+	flex-direction: row;
+	/* justify-content: flex-end;
+  align-items: flex-end; */
 }
 
 div.item_7 div { 
-	display: grid;
-	grid-template-columns: 1fr auto;
-	grid-column-gap: 0.5em;	
-	margin-bottom: 1.25em;
+    display: flex;
+    flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
 }
 
-div.item_7 img {
+div.item_7 div.flipbook-viewport+img {
+transform: translateX(-0.5em);
+margin-bottom: 6em;
+}
+
+div.item_7 img.kid-cry-img {
 	height: auto;
+	align-self:baseline;
+	margin: 18% 15% 15% 10%;
+  
 }
 
 /* draggable */
@@ -1692,7 +1700,7 @@ div.item_9 img:nth-child(3) {
 
 .flipbook-viewport .flipcontainer {
 	position: relative;
-	margin: auto;
+	margin: 0 0.5em 0.5em 0;
 }
 
 .flipbook-viewport .flipbook {
