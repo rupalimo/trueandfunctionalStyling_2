@@ -1289,6 +1289,9 @@ div.item_5,
 		box-shadow: var(--green-shadow);
 	transition: 0.175s linear;
 } */
+div.item_3 {
+	margin-right: 25%;
+}
 
 div.item_3 img:nth-of-type(2) {
 	margin-left: -4em;
@@ -1300,8 +1303,14 @@ div.item_3 img:nth-of-type(3) {
 	padding: 0.25em 0;
 }
 
-/* composition 04 ~~> .item_4 */
+div.item_3 img:nth-of-type(4) {
+	margin: 0 13.5%;
+}
 
+/* composition 04 ~~> .item_4 */
+div.item_4 {
+	margin-right: 10%;
+}
 
 /* composition 05 ~~> .item_5 */
 div.item_5 img:nth-of-type(1),
