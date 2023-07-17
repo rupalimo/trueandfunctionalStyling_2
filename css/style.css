@@ -216,7 +216,6 @@ a:hover {
 .thumbs:nth-of-type(25),
 .thumbs:nth-of-type(26) {
 	grid-row: 6;
-	background: #d3d3d338;
 	height: 3vh;
 }
 
@@ -227,7 +226,6 @@ a:hover {
 .thumbs:nth-of-type(31),
 .thumbs:nth-of-type(32) {
 	grid-row: 7;
-	background: #d3d3d338;
 	height: 3vh;
 }
 
@@ -236,7 +234,6 @@ a:hover {
 .thumbs:nth-of-type(35),
 .thumbs:nth-of-type(36) {
 	grid-row: 8;
-	background: #d3d3d338;
 	height: 3vh;
 }
 
@@ -1207,7 +1204,6 @@ div.item_6 div button,
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
-	margin-left: 0.25em;
 }
 
 div.item_1 .container button:nth-of-type(3) i,
@@ -1482,7 +1478,9 @@ div.item_9 img:nth-child(3) {
 
 .audio-player {
 	height: 3em;
-	width: 16vw;
+	    max-width: 16vw;
+    min-width: fit-content;
+	width: fit-content;
 	color: var(--darkgreen-color);
 	display: grid;
 	grid-template-rows: 6px auto;
@@ -1531,6 +1529,8 @@ div.item_9 img:nth-child(3) {
 	background-color: white;
 	border: none;
 	color: var(--darkgreen-color);
+	padding: 0;
+	margin-right: 0.25;
 }
 
 .audio-player .controls .audio-icon button:hover {
