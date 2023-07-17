@@ -1131,6 +1131,20 @@ a:hover {
 	flex-shrink: 0;
 }
 
+/* sticky number index on hover*/
+.stickyindex div:nth-of-type(1) a {
+	display: inline-flex;
+}
+
+.stickyindex div:nth-of-type(1) a:hover {
+filter: drop-shadow(0.65px 0.65px #00000000);
+}
+
+.stickyindex div:nth-of-type(1) a:hover::after {
+	content: ' name';
+	margin-left: 1em;
+}
+
 /* composition 01 ~~> .item_1 */
 
 div.item_1 {
