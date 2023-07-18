@@ -1132,16 +1132,198 @@ a:hover {
 }
 
 /* sticky number index on hover*/
-.stickyindex div:nth-of-type(1) a {
+.stickyindex div a {
 	display: inline-flex;
+	width: max-content;
 }
 
-.stickyindex div:nth-of-type(1) a:hover {
-filter: drop-shadow(0.65px 0.65px #00000000);
+.stickyindex div a:hover {
+	filter: drop-shadow(0.65px 0.65px #00000000);
+}
+
+.stickyindex div a:hover::after {
+	width: inherit;
+	left: 1em;
+	position: absolute;
 }
 
 .stickyindex div:nth-of-type(1) a:hover::after {
-	content: ' name';
+	content: 'Subdued Colours.mp4';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(2) a:hover::after {
+	content: 'Extended.mp4';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(3) a:hover::after {
+	content: 'Politics V Economics 1.png';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(4) a:hover::after {
+	content: 'Politics V Economics 2.png';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(5) a:hover::after {
+	content: 'JOAQUIM CHISSANO.png';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(6) a:hover::after {
+	content: 'APARTHEID HAS A FRIEND AT CHA$E MANHATTAN.png';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(7) a:hover::after {
+	content: 'Titchfield Hotel.png';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(8) a:hover::after {
+	content: 'Untitled (Polyptych 1).jpg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(9) a:hover::after {
+	content: 'Untitled (Polyptych 5).jpg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(10) a:hover::after {
+	content: 'Untitled (Polyptych 6).jpg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(11) a:hover::after {
+	content: 'Miriam Makeba Appears as Petitioner Before Apartheid Committee (with Mr. Karseno Sasmojo).jpg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(12) a:hover::after {
+	content: 'Mairuth Sarsfield at the United Nations in New York.jpg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(13) a:hover::after {
+	content: 'Carl Stone, “Constituents, Candidates, and Polls” in Politics versus Economics: The 1989 Elections in Jamaica.jpg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(14) a:hover::after {
+	content: 'T-MAC.jpg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(15) a:hover::after {
+	content: 'Michael E. Veal, “Every Spoil Is A Style: The Evolution of Dub Music in the 1970s” in Dub: Soundscapes and Shattered Songs in Jamaican Reggae.jpeg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(16) a:hover::after {
+	content: 'Pyroclastic flows at Mount Pelée.jpeg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(17) a:hover::after {
+	content: 'KID CRYING.jpeg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(18) a:hover::after {
+	content: 'GOATSKIN.jpeg';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(19) a:hover::after {
+	content: 'Wynter_Sylvia_Maskarade_A_Jonkunnu_Musical_Play_1973.pdf';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(20) a:hover::after {
+	content: 'Brathwaite_Kamau_The_Making_Of_The_Drum_1968.pdfBrathwaite_Kamau_The_Making_Of_The_Drum_1968.pdf';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(21) a:hover::after {
+	content: 'Watermelon.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(22) a:hover::after {
+	content: 'Atlantic Memory.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(23) a:hover::after {
+	content: 'Amor.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(24) a:hover::after {
+	content: 'Ovbomo.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(25) a:hover::after {
+	content: 'Sticky Notes.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(26) a:hover::after {
+	content: 'Exxxit.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(27) a:hover::after {
+	content: 'Silver Tape.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(28) a:hover::after {
+	content: 'Pink Cables.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(29) a:hover::after {
+	content: 'Untitled (Gee Fucking Wiz).wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(30) a:hover::after {
+	content: 'Dear Science.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(31) a:hover::after {
+	content: 'Black Rock Radio.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(32) a:hover::after {
+	content: 'Cosmic Underground.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(33) a:hover::after {
+	content: 'Planet Groove.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(34) a:hover::after {
+	content: 'Microwave Background.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(35) a:hover::after {
+	content: 'Rubber.wav';
+	margin-left: 1em;
+}
+
+.stickyindex div:nth-of-type(36) a:hover::after {
+	content: 'Thanks.wav';
 	margin-left: 1em;
 }
 
@@ -1472,7 +1654,7 @@ div.item_9 img:nth-child(3) {
 #fsglitch {
 	top: 0px;
 	left: 0em;
-	z-index: 1000;
+	z-index: 3;
 	position: relative;
 	flex-shrink: 0;
 	display: flex;
