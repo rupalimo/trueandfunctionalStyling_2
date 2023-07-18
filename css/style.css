@@ -1768,14 +1768,17 @@ div.item_9 img:nth-child(3) {
 	padding: 0.1em 0.85em 0.25em;
 	background-color: #ffffffb3;
 	border-radius: 1em;
+	z-index: 100;
 }
 
-.creditpage a.sticky + a.sticky {
+.creditpage a.sticky + a.sticky,
+.creditpage a.sticky + a.sticky:visited,
+.creditpage a.sticky + a.sticky:active {
 	border-color: #fff;
 }
 
 .creditpage a.sticky + a.sticky:focus {
-	border-color: var(--text-color);
+	
 }
 
 .creditpage a.sticky:hover {
