@@ -1674,9 +1674,8 @@ div.item_9 img:nth-child(3) {
 
 .audio-player {
 	height: 3em;
-	max-width: 16vw;
+	width: 16vw;
 	min-width: fit-content;
-	width: fit-content;
 	color: var(--darkgreen-color);
 	display: grid;
 	grid-template-rows: 6px auto;
