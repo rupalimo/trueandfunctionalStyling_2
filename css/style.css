@@ -1379,7 +1379,6 @@ box-shadow: var(--green-shadow);
 .goatdrag {
 	width: 100%;
 	display: grid;
-	cursor: cell;
 	grid-template-columns: repeat(2, auto);
 	justify-content: center;
 	align-items: center;
@@ -1407,6 +1406,7 @@ box-shadow: var(--green-shadow);
 	height: 20em;
 	background-size: contain;
 	position: absolute;
+	cursor: crosshair
 }
 
 .goat_img:hover {
