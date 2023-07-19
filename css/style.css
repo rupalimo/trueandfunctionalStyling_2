@@ -1689,16 +1689,7 @@ div.item_9 img:nth-child(3) {
 	margin: 1em 2em 1em 0.5em;
 }
 
-/* pixel css for small images */
-.pixellated {
-	image-rendering: optimizeSpeed;
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-crisp-edges;
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-	-ms-interpolation-mode: nearest-neighbor;
-}
+
 
 /* flipbook styling */
 .flipbook-viewport {
@@ -1759,3 +1750,47 @@ div.item_9 img:nth-child(3) {
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
 } */
+
+/* 
+lazyload class logic */
+.lazy {
+	image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.lazy.loaded {
+  image-rendering: auto;
+}
+
+/* pixel css for small images */
+.pixellated {
+	image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+.picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s linear;
+}
+
+
+.picture.loaded {
+  opacity: 1;
+}
