@@ -1,8 +1,8 @@
 // second video play toggle
 $('#play-pause-button-2').click(function () {
-    var mediaVideo = $("#vid_1");
+    var mediaVideo2 = $("#extended");
     // by having the same id for different videos, only max 4 can play at once. potentially a cool glitch???
-    mediaVideo.each(function (k, v) {
+    mediaVideo2.each(function (k, v) {
         if (v.paused) {
             v.play();
         } else {
@@ -16,7 +16,7 @@ $('#play-pause-button-2').click(function () {
 // play all
 
 $('#play-pause-button').click(function () {
-    var mediaVideo = $("#videoplay, #videoplay, #videoplay, #videoplay");
+    var mediaVideo = $("#subdued, #subdued, #subdued, #subdued");
     // by having the same id for different videos, only max 4 can play at once. potentially a cool glitch???
     mediaVideo.each(function (k, v) {
         if (v.paused) {
