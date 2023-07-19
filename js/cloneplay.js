@@ -16,7 +16,7 @@ $('#play-pause-button-2').click(function () {
 // play all
 
 $('#play-pause-button').click(function () {
-    var mediaVideo = $("#subdued, #subdued, #subdued, #subdued");
+    var mediaVideo = $("#subduedvideo, #subduedvideo, #subduedvideo, #subduedvideo");
     // by having the same id for different videos, only max 4 can play at once. potentially a cool glitch???
     mediaVideo.each(function (k, v) {
         if (v.paused) {
