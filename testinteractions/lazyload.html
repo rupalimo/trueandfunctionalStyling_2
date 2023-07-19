@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        overflow-x: scroll;
+    }
+    img {
+        width: 100%;
+        flex-shrink: 0;
+    }
+.lazy {
+  width: 30%;
+  padding: 10em;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+  -o-object-fit: cover;
+     object-fit: cover;
+     transition: opacity 1s linear;
+}
+.lazy.loaded {
+  image-rendering: auto;
+  transition: 2s linear;
+}
+
+</style>
+</head>
+<body>
+    <img class="lazy" data-src="../assets/img/POLITICS_V_ECONOMICS_1.png" src="../assets/img/tiny/POLITICS V ECONOMICS 2.jpg">
+    <img class="lazy" data-src="../assets/img/POLITICS_V_ECONOMICS_1.png" src="../assets/img/tiny/POLITICS V ECONOMICS 2.jpg">
+    <img class="lazy" data-src="../assets/img/POLITICS_V_ECONOMICS_1.png" src="../assets/img/tiny/POLITICS V ECONOMICS 2.jpg">
+    <img class="lazy" data-src="../assets/img/POLITICS_V_ECONOMICS_1.png" src="../assets/img/tiny/POLITICS V ECONOMICS 2.jpg">
+    <img class="lazy" data-src="../assets/img/POLITICS_V_ECONOMICS_1.png" src="../assets/img/tiny/POLITICS V ECONOMICS 2.jpg">
+    
+
+ <script>
+function pixelLazyLoad(selector) {
+  const lazyImages = [...document.querySelectorAll(".lazy")];
+
+  for (let lazyImage of lazyImages) {
+    if (lazyImage.getBoundingClientRect().left <= 1000) {
+      lazyImage.src = lazyImage.dataset.src;
+      lazyImage.classList.add("loaded");
+    }
+  }
+}
+
+pixelLazyLoad();
+
+window.addEventListener("scroll", pixelLazyLoad);
+</script>
+</body>
