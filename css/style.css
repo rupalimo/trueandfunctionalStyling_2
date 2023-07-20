@@ -1554,11 +1554,12 @@ div.item_6 img {
 }
 
 /* composition 07 ~~> .item_7 */
+
 div.item_7 {
 	display: flex;
-	/* flex-direction: column; */
-	justify-content: flex-end;
-  align-items: flex-end;
+	flex-direction: row;
+	/* justify-content: flex-end;
+  align-items: flex-end; */
 }
 
 div.item_7 div {
