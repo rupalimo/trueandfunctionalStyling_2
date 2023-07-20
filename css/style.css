@@ -2140,7 +2140,7 @@ div#mobile-preview p {
 }
 
 div#mobile-preview p em {
-	font-size: 1.05em;
+vertical-align: baseline;
     font-weight: 600;
 }
 
