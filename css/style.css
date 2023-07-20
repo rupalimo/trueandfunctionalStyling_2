@@ -1627,12 +1627,9 @@ box-shadow: var(--green-shadow);
 
 .goat_img:hover {
 	z-index: 5;
-	filter: drop-shadow(1px 3px 3px rgba(51, 255, 0, 0.12))
-		drop-shadow(1px 3px 3px rgba(14, 30, 37, 0.32));
-	filter: drop-shadow(2px 2px 0px rgba(51, 255, 0, 0.12))
-		drop-shadow(2px 2px 1px rgba(14, 30, 37, 0.32));
-	filter: drop-shadow(1px -3px -3px rgba(51, 255, 0, 0.12))
-		drop-shadow(1px -3px -3px rgba(14, 30, 37, 0.48));
+	    filter: drop-shadow(3px 3px 6px #6d786fc2);
+			transition: 0.15s linear;
+
 }
 
 /* composition 09 ~~> .item_9 */
