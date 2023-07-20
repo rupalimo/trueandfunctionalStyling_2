@@ -43,6 +43,10 @@ body {
 	opacity: 0;
 }
 
+div#mobile-preview {
+	display: none;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -111,6 +115,11 @@ a:hover {
 .index {
 	margin-left: 1em;
 	margin-right: 50%;
+	width: 28vw;
+}
+
+.index .row {
+	width: inherit;
 }
 
 .index a,
@@ -125,7 +134,8 @@ a:hover {
 .index a {
 	position: relative;
 	display: inline-block;
-	text-wrap: nowrap;
+	text-wrap: wrap;
+	
 }
 
 .index div {
@@ -151,6 +161,7 @@ a:hover {
 	margin: 1px 1px 0px 0px;
 	overflow: hidden;
 	border: 0.5px solid white;
+	z-index: 80;
 }
 
 .thumbs:nth-of-type(1),
@@ -262,7 +273,7 @@ a:hover {
 
 /* thumb hover */
 
-.thumbsindex .thumbs:hover {
+.thumbsindex .thumbs a:hover {
 	cursor: pointer;
 	border: 1.5px outset var(--green-color);
 
@@ -287,7 +298,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(1):hover ~ .thumbsindex .thumbs:nth-child(1) {
+.index .row:nth-child(1):hover ~ .thumbsindex .thumbs:nth-of-type(1) a {
 	border: 1.5px outset var(--green-color);
 
 	position: relative;
@@ -311,7 +322,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(2):hover ~ .thumbsindex .thumbs:nth-child(2) {
+.index .row:nth-child(2):hover ~ .thumbsindex .thumbs:nth-child(2) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -334,7 +345,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(3):hover ~ .thumbsindex .thumbs:nth-child(73) {
+.index .row:nth-child(3):hover ~ .thumbsindex .thumbs:nth-child(3) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -357,7 +368,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(4):hover ~ .thumbsindex .thumbs:nth-child(4) {
+.index .row:nth-child(4):hover ~ .thumbsindex .thumbs:nth-child(4) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -380,7 +391,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(5):hover ~ .thumbsindex .thumbs:nth-child(5) {
+.index .row:nth-child(5):hover ~ .thumbsindex .thumbs:nth-child(5) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -403,7 +414,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(6):hover ~ .thumbsindex .thumbs:nth-child(6) {
+.index .row:nth-child(6):hover ~ .thumbsindex .thumbs:nth-child(6) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -426,7 +437,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(7):hover ~ .thumbsindex .thumbs:nth-child(7) {
+.index .row:nth-child(7):hover ~ .thumbsindex .thumbs:nth-child(7) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -449,7 +460,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(8):hover ~ .thumbsindex .thumbs:nth-child(8) {
+.index .row:nth-child(8):hover ~ .thumbsindex .thumbs:nth-child(8) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -472,7 +483,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(9):hover ~ .thumbsindex .thumbs:nth-child(9) {
+.index .row:nth-child(9):hover ~ .thumbsindex .thumbs:nth-child(9) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -495,7 +506,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(10):hover ~ .thumbsindex .thumbs:nth-child(10) {
+.index .row:nth-child(10):hover ~ .thumbsindex .thumbs:nth-child(10) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -518,7 +529,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(11):hover ~ .thumbsindex .thumbs:nth-child(11) {
+.index .row:nth-child(11):hover ~ .thumbsindex .thumbs:nth-child(11) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -541,7 +552,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(12):hover ~ .thumbsindex .thumbs:nth-child(12) {
+.index .row:nth-child(12):hover ~ .thumbsindex .thumbs:nth-child(12) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -564,7 +575,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(13):hover ~ .thumbsindex .thumbs:nth-child(13) {
+.index .row:nth-child(13):hover ~ .thumbsindex .thumbs:nth-child(13) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -587,7 +598,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(14):hover ~ .thumbsindex .thumbs:nth-child(14) {
+.index .row:nth-child(14):hover ~ .thumbsindex .thumbs:nth-child(14) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -610,7 +621,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(15):hover ~ .thumbsindex .thumbs:nth-child(15) {
+.index .row:nth-child(15):hover ~ .thumbsindex .thumbs:nth-child(15) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -633,7 +644,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(16):hover ~ .thumbsindex .thumbs:nth-child(16) {
+.index .row:nth-child(16):hover ~ .thumbsindex .thumbs:nth-child(16) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -656,7 +667,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(17):hover ~ .thumbsindex .thumbs:nth-child(17) {
+.index .row:nth-child(17):hover ~ .thumbsindex .thumbs:nth-child(17) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -679,7 +690,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(18):hover ~ .thumbsindex .thumbs:nth-child(18) {
+.index .row:nth-child(18):hover ~ .thumbsindex .thumbs:nth-child(18) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -702,7 +713,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(19):hover ~ .thumbsindex .thumbs:nth-child(19) {
+.index .row:nth-child(19):hover ~ .thumbsindex .thumbs:nth-child(19) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -725,7 +736,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(20):hover ~ .thumbsindex .thumbs:nth-child(20) {
+.index .row:nth-child(20):hover ~ .thumbsindex .thumbs:nth-child(20) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -748,7 +759,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(21):hover ~ .thumbsindex .thumbs:nth-child(21) {
+.index .row:nth-child(21):hover ~ .thumbsindex .thumbs:nth-child(21) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -771,7 +782,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(22):hover ~ .thumbsindex .thumbs:nth-child(22) {
+.index .row:nth-child(22):hover ~ .thumbsindex .thumbs:nth-child(22) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -794,7 +805,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(23):hover ~ .thumbsindex .thumbs:nth-child(23) {
+.index .row:nth-child(23):hover ~ .thumbsindex .thumbs:nth-child(23) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -817,7 +828,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(24):hover ~ .thumbsindex .thumbs:nth-child(24) {
+.index .row:nth-child(24):hover ~ .thumbsindex .thumbs:nth-child(24) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -840,7 +851,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(25):hover ~ .thumbsindex .thumbs:nth-child(25) {
+.index .row:nth-child(25):hover ~ .thumbsindex .thumbs:nth-child(25) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -863,7 +874,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(26):hover ~ .thumbsindex .thumbs:nth-child(26) {
+.index .row:nth-child(26):hover ~ .thumbsindex .thumbs:nth-child(26) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -886,7 +897,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(27):hover ~ .thumbsindex .thumbs:nth-child(27) {
+.index .row:nth-child(27):hover ~ .thumbsindex .thumbs:nth-child(27) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -909,7 +920,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(28):hover ~ .thumbsindex .thumbs:nth-child(28) {
+.index .row:nth-child(28):hover ~ .thumbsindex .thumbs:nth-child(28) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -932,7 +943,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(29):hover ~ .thumbsindex .thumbs:nth-child(29) {
+.index .row:nth-child(29):hover ~ .thumbsindex .thumbs:nth-child(29) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -955,7 +966,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(30):hover ~ .thumbsindex .thumbs:nth-child(30) {
+.index .row:nth-child(30):hover ~ .thumbsindex .thumbs:nth-child(30) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -978,7 +989,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(31):hover ~ .thumbsindex .thumbs:nth-child(31) {
+.index .row:nth-child(31):hover ~ .thumbsindex .thumbs:nth-child(31) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1001,7 +1012,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(32):hover ~ .thumbsindex .thumbs:nth-child(32) {
+.index .row:nth-child(32):hover ~ .thumbsindex .thumbs:nth-child(32) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1024,7 +1035,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(33):hover ~ .thumbsindex .thumbs:nth-child(33) {
+.index .row:nth-child(33):hover ~ .thumbsindex .thumbs:nth-child(33) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1047,7 +1058,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(34):hover ~ .thumbsindex .thumbs:nth-child(34) {
+.index .row:nth-child(34):hover ~ .thumbsindex .thumbs:nth-child(34) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1070,11 +1081,30 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(35):hover ~ .thumbsindex .thumbs:nth-child(35) {
-	border: 1.5px outset var(--green-color);
+.index .row:nth-child(35):hover ~ .thumbsindex .thumbs:nth-child(35) a {
+		border: 1.5px outset var(--green-color);
+	position: relative;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: var(--green-color);
+		width: 100%;
+		height: 100%;
+	}
+	&:before {
+		mix-blend-mode: color;
+	}
+	&:after {
+		opacity: 0.4;
+		mix-blend-mode: darken;
+	}
 }
 
-.index .row:nth-child(36):hover ~ .thumbsindex .thumbs:nth-child(36) {
+.index .row:nth-child(36):hover ~ .thumbsindex .thumbs:nth-child(36) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1109,6 +1139,8 @@ a:hover {
 	bottom: 0;
 	background-color: #33ff0077;
 	z-index: 2;
+
+	
 }
 
 .index .row button {
@@ -1116,6 +1148,11 @@ a:hover {
 	border: none;
 	background-color: transparent;
 	padding: 0;
+  width: 100%;
+display: flex;
+flex-direction: row;
+font-family: var(--body-text);
+font-size: calc(0.89em + 0.15vw);
 }
 
 .index .row:hover button {
@@ -1474,7 +1511,7 @@ div.item_8 a img:hover {
 	transition: 0.175s linear;
 }
 
-div.item_2 span + img {
+div.item_2 div + img {
 	height: 100%;
 	width: auto;
 	padding: 1em 0;
@@ -1549,11 +1586,11 @@ div.item_6 img {
 }
 
 /* composition 07 ~~> .item_7 */
+
 div.item_7 {
 	display: flex;
 	flex-direction: row;
-	/* justify-content: flex-end;
-  align-items: flex-end; */
+	align-items: center;
 }
 
 div.item_7 div {
@@ -1563,9 +1600,13 @@ div.item_7 div {
 	justify-content: flex-end;
 }
 
+div.item_7 div.flipbook-viewport {
+	padding: 1em;
+}
+
 div.item_7 div.flipbook-viewport + img {
-	transform: translateX(-0.5em);
-	margin-bottom: 6em;
+	transform: translateX(-1.5em);
+ 
 }
 
 div.item_7 img.kid-cry-img {
@@ -1614,12 +1655,9 @@ box-shadow: var(--green-shadow);
 
 .goat_img:hover {
 	z-index: 5;
-	filter: drop-shadow(1px 3px 3px rgba(51, 255, 0, 0.12))
-		drop-shadow(1px 3px 3px rgba(14, 30, 37, 0.32));
-	filter: drop-shadow(2px 2px 0px rgba(51, 255, 0, 0.12))
-		drop-shadow(2px 2px 1px rgba(14, 30, 37, 0.32));
-	filter: drop-shadow(1px -3px -3px rgba(51, 255, 0, 0.12))
-		drop-shadow(1px -3px -3px rgba(14, 30, 37, 0.48));
+	    filter: drop-shadow(3px 3px 6px #6d786fc2);
+			transition: 0.15s linear;
+
 }
 
 /* composition 09 ~~> .item_9 */
@@ -1757,10 +1795,6 @@ div.item_9 img:nth-child(3) {
 	height: 223vh;
 }
 
-.creditpage a.sticky:first-of-type {
-	border-color: var(--green-color);
-}
-
 .creditpage a.sticky {
 	top: 1em;
 	font-family: var(--serif-text);
@@ -1771,15 +1805,20 @@ div.item_9 img:nth-child(3) {
 	z-index: 100;
 }
 
-.creditpage a.sticky + a.sticky,
-.creditpage a.sticky + a.sticky:visited,
-.creditpage a.sticky + a.sticky:active {
+.creditpage a.sticky:first-of-type {
+	margin-left: -0.85em;
+}
+
+.creditpage a.sticky:first-of-type,
+.creditpage a.sticky:first-of-type:visited,
+.creditpage a.sticky:first-of-type:active {
 	border-color: #fff;
 }
 
-.creditpage a.sticky + a.sticky:focus {
-	
+.creditpage a.sticky + a.sticky {
+	border-color: var(--green-color);
 }
+
 
 .creditpage a.sticky:hover {
 	background-color: var(--green-color);
@@ -2003,4 +2042,130 @@ lazyload class logic */
 
 .picture.loaded {
   opacity: 1;
+}
+
+
+/* BREAKPOINTS */
+
+
+/* IPAD MAX WIDTH 960PX */
+
+@media (max-width: 960px) {
+
+div.index div.thumbsindex {
+	display: none;
+}
+
+}
+
+
+/* MOBILE PORTRAIT */
+@media only screen and (orientation: portrait), screen and (max-width: 640px) {
+
+	div.stickyindex, div.index, div.audio-player, div.item {
+	display: none;
+}
+
+div.creditpage, #horizontalscroll div.title {
+	width: 100%;
+	max-width: 400px;
+}
+
+div.creditpage {
+margin: 0;
+padding: 1em;
+height: fit-content;
+}
+
+div.creditpage a {
+	text-align: center;
+}
+
+	div.creditpage a.sticky:first-of-type {
+	margin-left: 0;
+}
+
+div.creditpage section {
+padding: 1em;
+}
+
+
+div.creditpage section div.titleblock {
+padding: 0;
+margin: 2em 0 1em 0;
+	height: fit-content;
+	/* margin: 30% 0; */
+	/* border: 1.5px outset var(--green-color); */
+}
+
+div.creditpage section span {
+justify-content: space-around;
+    align-content: space-around;
+}
+div.creditpage section span img {
+margin: 0;
+
+}
+
+div.creditpage section h5:first-of-type {
+	margin-top: 4em;
+}
+
+div.creditpage section h5+ span {
+	height: 120px;
+}
+
+div.creditpage section h5+ span img {
+	width: 125px;
+	
+}
+
+div#mobile-preview {
+	display: block;
+}
+
+div#mobile-preview img {
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+div#mobile-preview p:first-of-type {
+	border-top: 1px dotted var(--green-color);
+	padding-top: 1em;
+}
+
+div#mobile-preview p {
+	text-transform: uppercase;
+}
+
+div#mobile-preview p em {
+vertical-align: baseline;
+    font-weight: 600;
+}
+
+}
+
+
+/* MOBILE LANDSCAPE*/
+@media only screen and (max-height: 400px) and (orientation: landscape) {
+
+div.index div.thumbsindex, div.stickyindex, div.index, div.audio-player, div.item {
+	display: none;
+}
+
+div#mobile-preview {
+	display: block;
+}
+div#mobile-preview p {}
+
+div#mobile-preview img {
+display: none;
+}
+
+.creditpage section div.titleblock {
+	height: fit-content;
+	margin-top: 4em;
+}
+
 }
