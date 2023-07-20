@@ -2106,7 +2106,7 @@ div#mobile-preview img {
 
 div#mobile-preview p:first-of-type {
 	border-top: 1px dotted var(--green-color);
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 div#mobile-preview p {
