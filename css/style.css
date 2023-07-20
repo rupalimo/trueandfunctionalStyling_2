@@ -115,6 +115,11 @@ a:hover {
 .index {
 	margin-left: 1em;
 	margin-right: 50%;
+	width: 28vw;
+}
+
+.index .row {
+	width: inherit;
 }
 
 .index a,
@@ -129,7 +134,8 @@ a:hover {
 .index a {
 	position: relative;
 	display: inline-block;
-	/* text-wrap: nowrap; */
+	text-wrap: wrap;
+	
 }
 
 .index div {
@@ -2018,6 +2024,7 @@ lazyload class logic */
 
 
 /* BREAKPOINTS */
+
 
 /* IPAD MAX WIDTH 960PX */
 
