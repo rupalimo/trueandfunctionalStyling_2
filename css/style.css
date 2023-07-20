@@ -1766,10 +1766,6 @@ div.item_9 img:nth-child(3) {
 	height: 223vh;
 }
 
-.creditpage a.sticky:first-of-type {
-	border-color: var(--green-color);
-}
-
 .creditpage a.sticky {
 	top: 1em;
 	font-family: var(--serif-text);
@@ -1780,15 +1776,20 @@ div.item_9 img:nth-child(3) {
 	z-index: 100;
 }
 
-.creditpage a.sticky + a.sticky,
-.creditpage a.sticky + a.sticky:visited,
-.creditpage a.sticky + a.sticky:active {
+.creditpage a.sticky:first-of-type {
+	margin-left: -0.85em;
+}
+
+.creditpage a.sticky:first-of-type,
+.creditpage a.sticky:first-of-type:visited,
+.creditpage a.sticky:first-of-type:active {
 	border-color: #fff;
 }
 
-.creditpage a.sticky + a.sticky:focus {
-	
+.creditpage a.sticky + a.sticky {
+	border-color: var(--green-color);
 }
+
 
 .creditpage a.sticky:hover {
 	background-color: var(--green-color);
@@ -2029,6 +2030,50 @@ div.index div.thumbsindex {
 
 /* MOBILE PORTRAIT */
 @media only screen and (orientation: portrait), screen and (max-width: 640px) {
+
+	div.stickyindex, div.index, div.audio-player, div.item {
+	display: none;
+}
+
+div.creditpage, #horizontalscroll div.title {
+	width: 100%;
+}
+
+#horizontalscroll div.title img#mobile-preview-gif {
+	display: block;
+}
+
+div.creditpage {
+margin: 0;
+padding: 1em;
+height: 100%;
+}
+
+div.creditpage section {
+padding: 1em;
+}
+
+div.creditpage section div.titleblock {
+	margin: 10%;
+	height: fit-content;
+}
+div.creditpage section span {
+justify-content: space-around;
+    align-content: space-around;
+}
+div.creditpage section span img {
+margin: 0;
+
+}
+
+div.creditpage section h5+ span {
+	height: 120px;
+}
+
+div.creditpage section h5+ span img {
+	width: 125px;
+	
+}
 
 }
 
