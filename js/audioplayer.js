@@ -1,6 +1,6 @@
 const audioPlayer = document.querySelector('.audio-player');
-const audio = new Audio('./assets/backsound.mp3');
-
+const audio = new Audio('./assets/backsounds.wav');
+// (to replace with .wav on launch)
 console.dir(audio);
 
 audio.addEventListener(
@@ -27,18 +27,18 @@ timeline.addEventListener(
 );
 
 //click volume slider to change volume
-const volumeSlider = audioPlayer.querySelector('.controls .volume-slider');
-volumeSlider.addEventListener(
-	'click',
-	(e) => {
-		const sliderWidth = window.getComputedStyle(volumeSlider).width;
-		const newVolume = e.offsetX / parseInt(sliderWidth);
-		audio.volume = newVolume;
-		audioPlayer.querySelector('.controls .volume-percentage').style.width =
-			newVolume * 100 + '%';
-	},
-	false
-);
+// const volumeSlider = audioPlayer.querySelector('.controls .volume-slider');
+// volumeSlider.addEventListener(
+// 	'click',
+// 	(e) => {
+// 		const sliderWidth = window.getComputedStyle(volumeSlider).width;
+// 		const newVolume = e.offsetX / parseInt(sliderWidth);
+// 		audio.volume = newVolume;
+// 		audioPlayer.querySelector('.controls .volume-percentage').style.width =
+// 			newVolume * 100 + '%';
+// 	},
+// 	false
+// );
 
 //check audio percentage and update time accordingly
 setInterval(() => {
@@ -67,17 +67,17 @@ playBtn.addEventListener(
 	false
 );
 
-audioPlayer.querySelector('.volume-button').addEventListener('click', () => {
-	const volumeEl = audioPlayer.querySelector('.volume-container .volume');
-	audio.muted = !audio.muted;
-	if (audio.muted) {
-		volumeEl.classList.remove('icono-volumeMedium');
-		volumeEl.classList.add('icono-volumeMute');
-	} else {
-		volumeEl.classList.add('icono-volumeMedium');
-		volumeEl.classList.remove('icono-volumeMute');
-	}
-});
+// audioPlayer.querySelector('.volume-button').addEventListener('click', () => {
+// 	const volumeEl = audioPlayer.querySelector('.volume-container .volume');
+// 	audio.muted = !audio.muted;
+// 	if (audio.muted) {
+// 		volumeEl.classList.remove('icono-volumeMedium');
+// 		volumeEl.classList.add('icono-volumeMute');
+// 	} else {
+// 		volumeEl.classList.add('icono-volumeMedium');
+// 		volumeEl.classList.remove('icono-volumeMute');
+// 	}
+// });
 
 //turn 128 seconds into 2:08
 function getTimeCodeFromNum(num) {
@@ -92,3 +92,167 @@ function getTimeCodeFromNum(num) {
 		seconds % 60
 	).padStart(2, 0)}`;
 }
+
+// all the time skips
+
+var waterMelon = document.getElementById('time00'),
+	atLantic = document.getElementById('time71'),
+	aMor = document.getElementById('time138'),
+	ovbomo = document.getElementById('time180'),
+	stickyNotes = document.getElementById('time244'),
+	exXit = document.getElementById('time284'),
+	silverTape = document.getElementById('time305'),
+	pinkCable = document.getElementById('timepink'),
+	geeWiz = document.getElementById('timegee'),
+	dearScience = document.getElementById('timedear'),
+	blackRock = document.getElementById('timeradio'),
+	underGround = document.getElementById('timemic'),
+	plntGroove = document.getElementById('timegroove'),
+	microWave = document.getElementById('timebg'),
+	ruBber = document.getElementById('timerubber'),
+	thanks = document.getElementById('timethx')
+	;
+
+waterMelon.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 0;
+	},
+	false
+);
+
+atLantic.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 71.54;
+	},
+	false
+);
+
+aMor.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 138.76;
+	},
+	false
+);
+
+ovbomo.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 180.82;
+	},
+	false
+);
+
+stickyNotes.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 244.25;
+	},
+	false
+);
+
+exXit.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 284.01;
+	},
+	false
+);
+
+silverTape.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 305.84;
+	},
+	false
+);
+
+pinkCable.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 416.42;
+	},
+	false
+);
+
+geeWiz.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 563.41;
+	},
+	false
+);
+
+dearScience.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 607.56;
+	},
+	false
+);
+
+blackRock.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 668.15;
+	},
+	false
+);
+
+underGround.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 737.137;
+	},
+	false
+);
+
+plntGroove.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 793.277;
+	},
+	false
+);
+
+microWave.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 977.443;
+	},
+	false
+);
+
+ruBber.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 1158.482;
+	},
+	false
+);
+
+thanks.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 1226.435;
+	},
+	false
+);
