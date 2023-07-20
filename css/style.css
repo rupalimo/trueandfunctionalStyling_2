@@ -1569,8 +1569,12 @@ div.item_7 div {
 	justify-content: flex-end;
 }
 
+div.item_7 div.flipbook-viewport {
+	padding: 1em;
+}
+
 div.item_7 div.flipbook-viewport + img {
-	transform: translateX(-0.5em);
+	transform: translateX(-1.5em);
 	margin-bottom: 6em;
 }
 
