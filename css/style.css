@@ -2091,8 +2091,8 @@ padding: 1em;
 
 
 div.creditpage section div.titleblock {
-padding: 5%;
-margin: 4em 0 0 0;
+padding: 0;
+margin: 2em 0 1em 0;
 	height: fit-content;
 	/* margin: 30% 0; */
 	/* border: 1.5px outset var(--green-color); */
@@ -2108,7 +2108,7 @@ margin: 0;
 }
 
 div.creditpage section h5:first-of-type {
-	margin-top: 40%;
+	margin-top: 4em;
 }
 
 div.creditpage section h5+ span {
