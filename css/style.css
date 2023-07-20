@@ -125,7 +125,7 @@ a:hover {
 .index a {
 	position: relative;
 	display: inline-block;
-	text-wrap: nowrap;
+	/* text-wrap: nowrap; */
 }
 
 .index div {
@@ -2012,4 +2012,27 @@ lazyload class logic */
 
 .picture.loaded {
   opacity: 1;
+}
+
+
+/* BREAKPOINTS */
+
+/* IPAD MAX WIDTH 960PX */
+
+@media (max-width: 960px) {
+
+div.index div.thumbsindex {
+	display: none;
+}
+
+}
+
+/* MOBILE PORTRAIT */
+@media only screen and (orientation: portrait), screen and (max-width: 640px) {
+
+}
+
+/* MOBILE LANDSCAPE*/
+@media only screen and (max-height: 400px) and (orientation: landscape) {
+
 }
