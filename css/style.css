@@ -2042,6 +2042,7 @@ div.index div.thumbsindex {
 
 div.creditpage, #horizontalscroll div.title {
 	width: 100%;
+	max-width: 400px;
 }
 
 div.creditpage {
@@ -2069,11 +2070,6 @@ margin: 4em 0 0 0;
 	height: fit-content;
 	/* margin: 30% 0; */
 	/* border: 1.5px outset var(--green-color); */
-}
-
-div#mobile-preview p:first-of-type {
-	border-top: 1px dotted var(--green-color);
-	padding-top: 2em;
 }
 
 div.creditpage section span {
@@ -2104,13 +2100,46 @@ div#mobile-preview {
 
 div#mobile-preview img {
 	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+div#mobile-preview p:first-of-type {
+	border-top: 1px dotted var(--green-color);
+	padding-top: 2em;
+}
+
+div#mobile-preview p {
+	text-transform: uppercase;
+}
+
+div#mobile-preview p em {
+	font-size: 1.05em;
+    font-weight: 600;
+}
+
 }
 
 
 /* MOBILE LANDSCAPE*/
 @media only screen and (max-height: 400px) and (orientation: landscape) {
 
+div.index div.thumbsindex, div.stickyindex, div.index, div.audio-player, div.item {
+	display: none;
+}
 
+div#mobile-preview {
+	display: block;
+}
+div#mobile-preview p {}
 
+div#mobile-preview img {
+display: none;
+}
+
+.creditpage section div.titleblock {
+	height: fit-content;
+	margin-top: 4em;
+}
 
 }
