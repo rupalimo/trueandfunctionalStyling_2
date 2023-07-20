@@ -2044,18 +2044,10 @@ div.creditpage, #horizontalscroll div.title {
 	width: 100%;
 }
 
-#horizontalscroll div.title img#mobile-preview-gif {
-	display: block;
-}
-
 div.creditpage {
 margin: 0;
 padding: 1em;
 height: fit-content;
-}
-
-div#mobile-preview {
-	display: block;
 }
 
 div.creditpage a {
@@ -2073,19 +2065,16 @@ padding: 1em;
 
 div.creditpage section div.titleblock {
 padding: 5%;
-margin: 4em 0;
+margin: 4em 0 0 0;
 	height: fit-content;
 	/* margin: 30% 0; */
 	/* border: 1.5px outset var(--green-color); */
-
 }
 
 div#mobile-preview p:first-of-type {
 	border-top: 1px dotted var(--green-color);
 	padding-top: 2em;
 }
-
-
 
 div.creditpage section span {
 justify-content: space-around;
@@ -2109,7 +2098,12 @@ div.creditpage section h5+ span img {
 	
 }
 
+div#mobile-preview {
+	display: block;
+}
 
+div#mobile-preview img {
+	width: 100%;
 }
 
 
