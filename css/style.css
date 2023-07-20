@@ -251,6 +251,10 @@ a:hover {
 	background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
+.index .row button a:nth-child(1) {
+	margin-right: 1.4em;
+}
+
 .index .row a:nth-child(1) {
 	margin-right: 1.6em;
 	width: 1em;
@@ -1120,7 +1124,7 @@ a:hover {
 display: flex;
 flex-direction: row;
 font-family: var(--body-text);
-font-size: calc(0.89em + 0.15vw);
+font-size: inherit;
 }
 
 .index .row:hover button {
