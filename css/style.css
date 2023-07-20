@@ -108,7 +108,7 @@ a:hover {
 	position: sticky;
 	position: -webkit-sticky;
 	left: 1em;
-	z-index: 81;
+	z-index: 90;
 	padding-right: 6px;
 }
 
