@@ -108,7 +108,7 @@ a:hover {
 	position: sticky;
 	position: -webkit-sticky;
 	left: 1em;
-	z-index: 90;
+	z-index: 81;
 	padding-right: 6px;
 }
 
@@ -161,6 +161,7 @@ a:hover {
 	margin: 1px 1px 0px 0px;
 	overflow: hidden;
 	border: 0.5px solid white;
+	z-index: 80;
 }
 
 .thumbs:nth-of-type(1),
@@ -272,9 +273,9 @@ a:hover {
 
 /* thumb hover */
 
-.thumbsindex .thumbs:hover {
+.thumbsindex .thumbs a:hover {
 	cursor: pointer;
-	border: 1.5px outset var(--green-color);
+	border: 1px outset var(--green-color);
 
 	position: relative;
 
