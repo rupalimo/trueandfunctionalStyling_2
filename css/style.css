@@ -275,30 +275,6 @@ a:hover {
 
 .thumbsindex .thumbs a:hover {
 	cursor: pointer;
-	border: 1px outset var(--green-color);
-
-	position: relative;
-
-	&:before,
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: var(--green-color);
-		width: 100%;
-		height: 100%;
-	}
-	&:before {
-		mix-blend-mode: color;
-	}
-	&:after {
-		opacity: 0.4;
-		mix-blend-mode: darken;
-	}
-}
-
-.index .row:nth-child(1):hover ~ .thumbsindex .thumbs:nth-child(1) {
 	border: 1.5px outset var(--green-color);
 
 	position: relative;
@@ -322,7 +298,31 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(2):hover ~ .thumbsindex .thumbs:nth-child(2) {
+.index .row:nth-child(1):hover ~ .thumbsindex .thumbs:nth-of-type(1) a {
+	border: 1.5px outset var(--green-color);
+
+	position: relative;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: var(--green-color);
+		width: 100%;
+		height: 100%;
+	}
+	&:before {
+		mix-blend-mode: color;
+	}
+	&:after {
+		opacity: 0.4;
+		mix-blend-mode: darken;
+	}
+}
+
+.index .row:nth-child(2):hover ~ .thumbsindex .thumbs:nth-child(2) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -345,7 +345,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(3):hover ~ .thumbsindex .thumbs:nth-child(73) {
+.index .row:nth-child(3):hover ~ .thumbsindex .thumbs:nth-child(3) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -368,7 +368,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(4):hover ~ .thumbsindex .thumbs:nth-child(4) {
+.index .row:nth-child(4):hover ~ .thumbsindex .thumbs:nth-child(4) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -391,7 +391,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(5):hover ~ .thumbsindex .thumbs:nth-child(5) {
+.index .row:nth-child(5):hover ~ .thumbsindex .thumbs:nth-child(5) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -414,7 +414,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(6):hover ~ .thumbsindex .thumbs:nth-child(6) {
+.index .row:nth-child(6):hover ~ .thumbsindex .thumbs:nth-child(6) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -437,7 +437,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(7):hover ~ .thumbsindex .thumbs:nth-child(7) {
+.index .row:nth-child(7):hover ~ .thumbsindex .thumbs:nth-child(7) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -460,7 +460,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(8):hover ~ .thumbsindex .thumbs:nth-child(8) {
+.index .row:nth-child(8):hover ~ .thumbsindex .thumbs:nth-child(8) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -483,7 +483,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(9):hover ~ .thumbsindex .thumbs:nth-child(9) {
+.index .row:nth-child(9):hover ~ .thumbsindex .thumbs:nth-child(9) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -506,7 +506,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(10):hover ~ .thumbsindex .thumbs:nth-child(10) {
+.index .row:nth-child(10):hover ~ .thumbsindex .thumbs:nth-child(10) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -529,7 +529,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(11):hover ~ .thumbsindex .thumbs:nth-child(11) {
+.index .row:nth-child(11):hover ~ .thumbsindex .thumbs:nth-child(11) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -552,7 +552,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(12):hover ~ .thumbsindex .thumbs:nth-child(12) {
+.index .row:nth-child(12):hover ~ .thumbsindex .thumbs:nth-child(12) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -575,7 +575,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(13):hover ~ .thumbsindex .thumbs:nth-child(13) {
+.index .row:nth-child(13):hover ~ .thumbsindex .thumbs:nth-child(13) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -598,7 +598,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(14):hover ~ .thumbsindex .thumbs:nth-child(14) {
+.index .row:nth-child(14):hover ~ .thumbsindex .thumbs:nth-child(14) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -621,7 +621,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(15):hover ~ .thumbsindex .thumbs:nth-child(15) {
+.index .row:nth-child(15):hover ~ .thumbsindex .thumbs:nth-child(15) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -644,7 +644,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(16):hover ~ .thumbsindex .thumbs:nth-child(16) {
+.index .row:nth-child(16):hover ~ .thumbsindex .thumbs:nth-child(16) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -667,7 +667,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(17):hover ~ .thumbsindex .thumbs:nth-child(17) {
+.index .row:nth-child(17):hover ~ .thumbsindex .thumbs:nth-child(17) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -690,7 +690,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(18):hover ~ .thumbsindex .thumbs:nth-child(18) {
+.index .row:nth-child(18):hover ~ .thumbsindex .thumbs:nth-child(18) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -713,7 +713,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(19):hover ~ .thumbsindex .thumbs:nth-child(19) {
+.index .row:nth-child(19):hover ~ .thumbsindex .thumbs:nth-child(19) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -736,7 +736,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(20):hover ~ .thumbsindex .thumbs:nth-child(20) {
+.index .row:nth-child(20):hover ~ .thumbsindex .thumbs:nth-child(20) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -759,7 +759,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(21):hover ~ .thumbsindex .thumbs:nth-child(21) {
+.index .row:nth-child(21):hover ~ .thumbsindex .thumbs:nth-child(21) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -782,7 +782,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(22):hover ~ .thumbsindex .thumbs:nth-child(22) {
+.index .row:nth-child(22):hover ~ .thumbsindex .thumbs:nth-child(22) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -805,7 +805,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(23):hover ~ .thumbsindex .thumbs:nth-child(23) {
+.index .row:nth-child(23):hover ~ .thumbsindex .thumbs:nth-child(23) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -828,7 +828,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(24):hover ~ .thumbsindex .thumbs:nth-child(24) {
+.index .row:nth-child(24):hover ~ .thumbsindex .thumbs:nth-child(24) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -851,7 +851,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(25):hover ~ .thumbsindex .thumbs:nth-child(25) {
+.index .row:nth-child(25):hover ~ .thumbsindex .thumbs:nth-child(25) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -874,7 +874,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(26):hover ~ .thumbsindex .thumbs:nth-child(26) {
+.index .row:nth-child(26):hover ~ .thumbsindex .thumbs:nth-child(26) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -897,7 +897,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(27):hover ~ .thumbsindex .thumbs:nth-child(27) {
+.index .row:nth-child(27):hover ~ .thumbsindex .thumbs:nth-child(27) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -920,7 +920,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(28):hover ~ .thumbsindex .thumbs:nth-child(28) {
+.index .row:nth-child(28):hover ~ .thumbsindex .thumbs:nth-child(28) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -943,7 +943,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(29):hover ~ .thumbsindex .thumbs:nth-child(29) {
+.index .row:nth-child(29):hover ~ .thumbsindex .thumbs:nth-child(29) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -966,7 +966,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(30):hover ~ .thumbsindex .thumbs:nth-child(30) {
+.index .row:nth-child(30):hover ~ .thumbsindex .thumbs:nth-child(30) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -989,7 +989,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(31):hover ~ .thumbsindex .thumbs:nth-child(31) {
+.index .row:nth-child(31):hover ~ .thumbsindex .thumbs:nth-child(31) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1012,7 +1012,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(32):hover ~ .thumbsindex .thumbs:nth-child(32) {
+.index .row:nth-child(32):hover ~ .thumbsindex .thumbs:nth-child(32) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1035,7 +1035,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(33):hover ~ .thumbsindex .thumbs:nth-child(33) {
+.index .row:nth-child(33):hover ~ .thumbsindex .thumbs:nth-child(33) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1058,7 +1058,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(34):hover ~ .thumbsindex .thumbs:nth-child(34) {
+.index .row:nth-child(34):hover ~ .thumbsindex .thumbs:nth-child(34) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1081,11 +1081,30 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(35):hover ~ .thumbsindex .thumbs:nth-child(35) {
-	border: 1.5px outset var(--green-color);
+.index .row:nth-child(35):hover ~ .thumbsindex .thumbs:nth-child(35) a {
+		border: 1.5px outset var(--green-color);
+	position: relative;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: var(--green-color);
+		width: 100%;
+		height: 100%;
+	}
+	&:before {
+		mix-blend-mode: color;
+	}
+	&:after {
+		opacity: 0.4;
+		mix-blend-mode: darken;
+	}
 }
 
-.index .row:nth-child(36):hover ~ .thumbsindex .thumbs:nth-child(36) {
+.index .row:nth-child(36):hover ~ .thumbsindex .thumbs:nth-child(36) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1120,6 +1139,8 @@ a:hover {
 	bottom: 0;
 	background-color: #33ff0077;
 	z-index: 2;
+
+	
 }
 
 .index .row button {
