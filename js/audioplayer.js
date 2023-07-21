@@ -110,10 +110,35 @@ var waterMelon = document.getElementById('time00'),
 	plntGroove = document.getElementById('timegroove'),
 	microWave = document.getElementById('timebg'),
 	ruBber = document.getElementById('timerubber'),
-	thanks = document.getElementById('timethx')
+	thanks = document.getElementById('timethx'),
+	waterMelon2 = document.getElementById('stick1'),
+	atLantic2 = document.getElementById('stick2'),
+	aMor2 = document.getElementById('stick3'),
+	ovbomo2 = document.getElementById('stick4'),
+	stickyNotes2 = document.getElementById('stick5'),
+	exXit2 = document.getElementById('stick6'),
+	silverTape2 = document.getElementById('stick7'),
+	pinkCable2 = document.getElementById('stick8'),
+	geeWiz2 = document.getElementById('stick9'),
+	dearScience2 = document.getElementById('stick10'),
+	blackRock2 = document.getElementById('stick11'),
+	underGround2 = document.getElementById('stick12'),
+	plntGroove2 = document.getElementById('stick13'),
+	microWave2 = document.getElementById('stick14'),
+	ruBber2 = document.getElementById('stick15'),
+	thanks2 = document.getElementById('stick16')
 	;
 
 waterMelon.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 0;
+	},
+	false
+);
+
+waterMelon2.addEventListener(
 	'click',
 	() => {
 		audio.play();
@@ -131,7 +156,25 @@ atLantic.addEventListener(
 	false
 );
 
+atLantic2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 71.54;
+	},
+	false
+);
+
 aMor.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 138.76;
+	},
+	false
+);
+
+aMor2.addEventListener(
 	'click',
 	() => {
 		audio.play();
@@ -149,7 +192,25 @@ ovbomo.addEventListener(
 	false
 );
 
+ovbomo2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 180.82;
+	},
+	false
+);
+
 stickyNotes.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 244.25;
+	},
+	false
+);
+
+stickyNotes2.addEventListener(
 	'click',
 	() => {
 		audio.play();
@@ -167,7 +228,25 @@ exXit.addEventListener(
 	false
 );
 
+exXit2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 284.01;
+	},
+	false
+);
+
 silverTape.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 305.84;
+	},
+	false
+);
+
+silverTape2.addEventListener(
 	'click',
 	() => {
 		audio.play();
@@ -185,7 +264,25 @@ pinkCable.addEventListener(
 	false
 );
 
+pinkCable2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 416.42;
+	},
+	false
+);
+
 geeWiz.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 563.41;
+	},
+	false
+);
+
+geeWiz2.addEventListener(
 	'click',
 	() => {
 		audio.play();
@@ -203,7 +300,25 @@ dearScience.addEventListener(
 	false
 );
 
+dearScience2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 607.56;
+	},
+	false
+);
+
 blackRock.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 668.15;
+	},
+	false
+);
+
+blackRock2.addEventListener(
 	'click',
 	() => {
 		audio.play();
@@ -221,7 +336,25 @@ underGround.addEventListener(
 	false
 );
 
+underGround2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 737.137;
+	},
+	false
+);
+
 plntGroove.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 793.277;
+	},
+	false
+);
+
+plntGroove2.addEventListener(
 	'click',
 	() => {
 		audio.play();
@@ -239,6 +372,15 @@ microWave.addEventListener(
 	false
 );
 
+microWave2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 977.443;
+	},
+	false
+);
+
 ruBber.addEventListener(
 	'click',
 	() => {
@@ -248,7 +390,25 @@ ruBber.addEventListener(
 	false
 );
 
+ruBber2.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 1158.482;
+	},
+	false
+);
+
 thanks.addEventListener(
+	'click',
+	() => {
+		audio.play();
+		audio.currentTime = 1226.435;
+	},
+	false
+);
+
+thanks2.addEventListener(
 	'click',
 	() => {
 		audio.play();
