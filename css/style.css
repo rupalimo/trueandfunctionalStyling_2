@@ -1792,7 +1792,7 @@ div.item_9 img:nth-child(3) {
 	margin-left: 3em;
 	width: 27%;
 	padding-right: 2em;
-	height: 223vh;
+	/* height: 223vh; */
 }
 
 .creditpage a.sticky {
@@ -1830,6 +1830,7 @@ div.item_9 img:nth-child(3) {
 	flex-direction: column;
 	padding-right: 12px;
 	line-height: 1.25em;
+	margin-bottom: 10em;
 }
 
 .creditpage section div.titleblock {
@@ -1894,23 +1895,6 @@ div.item_9 img:nth-child(3) {
 	font-weight: 600;
 }
 
-.creditpage section ul {
-	margin-top: 0.5em;
-	padding: 0;
-	list-style-type: none;
-}
-
-.creditpage section li {
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 0.5em;
-	text-align: justify;
-	margin: 0.25em;
-}
-
-.creditpage section li div:first-of-type {
-	margin-top: 2px;
-}
 
 .creditpage section h5 {
 	text-transform: uppercase;
@@ -1918,7 +1902,7 @@ div.item_9 img:nth-child(3) {
 	letter-spacing: 0.05em;
 }
 
-.creditpage section h5:nth-of-type(2) {
+.creditpage section h5:nth-of-type(2), .creditpage section h5:nth-of-type(3) {
 	margin-top: 4em;
 }
 
