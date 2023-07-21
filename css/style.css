@@ -1817,7 +1817,7 @@ overflow-x: hidden;
 	margin-left: 3em;
 	width: 27%;
 	padding-right: 2em;
-	height: 223vh;
+	/* height: 223vh; */
 }
 
 .creditpage a.sticky {
@@ -1855,6 +1855,8 @@ overflow-x: hidden;
 	flex-direction: column;
 	padding-right: 12px;
 	line-height: 1.25em;
+	margin-bottom: 10em;
+	font-family: var(--serif-text);
 }
 
 .creditpage section div.titleblock {
@@ -1910,7 +1912,7 @@ overflow-x: hidden;
 	line-height: 1.25em;
 	font-style: normal;
 	font-family: var(--serif-text);
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .creditpage section i {
