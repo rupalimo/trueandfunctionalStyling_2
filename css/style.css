@@ -1120,11 +1120,11 @@ a:hover {
 	border: none;
 	background-color: transparent;
 	padding: 0;
-  width: 100%;
-display: flex;
-flex-direction: row;
-font-family: var(--body-text);
-font-size: inherit;
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	font-family: var(--body-text);
+	font-size: inherit;
 }
 
 .index .row:hover button {
@@ -1138,6 +1138,15 @@ font-size: inherit;
 	position: -webkit-sticky;
 	left: 0;
 	flex-shrink: 0;
+}
+
+.stickyindex button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+    width: 100%;
+	font-family: var(--body-text);
+	font-size: inherit;
 }
 
 /* sticky number index on hover*/
@@ -1515,7 +1524,7 @@ div.item_3 img:nth-of-type(3) {
 	padding: 0.25em 0;
 }
 
-div.item_3 img:nth-of-type(4) {
+div.item_3 img#politics2 {
 	margin: 0 13.5%;
 }
 
@@ -1642,8 +1651,10 @@ div.item_9 img:nth-child(3) {
 
 /* endless scroll single container */
 #endlessscroll {
-	max-height: 50em;
-	overflow-y: auto;
+	max-height: 61em;
+overflow-y: auto;
+width: auto;
+overflow-x: hidden;
 }
 
 #endlessscroll ul {
@@ -1659,6 +1670,16 @@ div.item_9 img:nth-child(3) {
 #endlessscroll img {
 	padding: 0;
 }
+
+#endlessscroll::-webkit-scrollbar {
+	display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #endlessscroll {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
 
 /* fullscreen scroll styling, composition 4 ~~> .item_4*/
 #fsglitch {
