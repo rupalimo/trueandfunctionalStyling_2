@@ -1921,31 +1921,16 @@ overflow-x: hidden;
 	font-weight: 600;
 }
 
-.creditpage section ul {
-	margin-top: 0.5em;
-	padding: 0;
-	list-style-type: none;
-}
 
-.creditpage section li {
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 0.5em;
-	text-align: justify;
-	margin: 0.25em;
-}
-
-.creditpage section li div:first-of-type {
-	margin-top: 2px;
-}
 
 .creditpage section h5 {
 	text-transform: uppercase;
 	border-bottom: 1px solid var(--green-color);
 	letter-spacing: 0.05em;
+	margin-bottom: 0.85em;
 }
 
-.creditpage section h5:nth-of-type(2) {
+.creditpage section h5:nth-of-type(2), .creditpage section h5:nth-of-type(3) {
 	margin-top: 4em;
 }
 
