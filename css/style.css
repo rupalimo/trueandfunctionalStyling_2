@@ -4,6 +4,8 @@
 	--body-text: 'SSans-sserif', 'Arial', sans-serif;
 	--bold-text: 'SSans-sserif-bold', 'Arial', sans-serif;
 	--serif-text: 'SSerif', 'Times New Roman', serif;
+	--mono-text: 'Mmono', monospace;
+	--monobld-text: 'Mmono-Bold', monospace;
 	--text-color: #000;
 	--green-color: #33ff00;
 	--darkgreen-color: #06b506;
@@ -1797,7 +1799,8 @@ div.item_9 img:nth-child(3) {
 
 .creditpage a.sticky {
 	top: 1em;
-	font-family: var(--serif-text);
+	/* font-family: var(--serif-text); */
+	font-family: var(--mono-text);
 	border: 1px solid;
 	padding: 0.1em 0.85em 0.25em;
 	background-color: #ffffffb3;
@@ -1831,7 +1834,7 @@ div.item_9 img:nth-child(3) {
 	padding-right: 12px;
 	line-height: 1.25em;
 	margin-bottom: 10em;
-	
+	font-family: var(--mono-text);
 }
 
 .creditpage section div.titleblock {
@@ -1886,12 +1889,14 @@ div.item_9 img:nth-child(3) {
 .creditpage section em {
 	line-height: 1.25em;
 	font-style: normal;
-	font-family: var(--serif-text);
-	font-weight: 400;
+	/* font-family: var(--serif-text); */
+	font-weight: 600;
+	font-family: var(--body-text);
 }
 
 .creditpage section i {
-	font-family: var(--serif-text);
+	/* font-family: var(--serif-text); */
+	font-family: var(--body-text);
 	font-style: normal;
 	font-weight: 600;
 }

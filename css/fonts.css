@@ -45,3 +45,17 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Mmono';
+	src: url('../assets/fonts/SpaceMono-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Mmono-Bold';
+	src: url('../assets/fonts/SpaceMono-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: bold;
+}
