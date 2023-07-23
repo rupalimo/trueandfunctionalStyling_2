@@ -1551,7 +1551,7 @@ div.item_3 img:nth-of-type(2) {
 }
 
 div.item_3 img:nth-of-type(2),
-div.item_3 img:nth-of-type(3) {
+div.item_3 div {
 	height: 100%;
 	padding: 0.25em 0;
 }
