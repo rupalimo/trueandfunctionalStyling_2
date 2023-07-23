@@ -1685,9 +1685,9 @@ div.item_9 img:nth-child(3) {
 /* endless scroll single container */
 #endlessscroll {
 	max-height: 61em;
-overflow-y: auto;
-width: auto;
-overflow-x: hidden;
+    overflow-y: auto;
+    width: 63em;
+    overflow-x: visible;
 }
 
 #endlessscroll ul {
