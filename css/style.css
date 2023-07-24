@@ -1906,6 +1906,7 @@ div.item_9 img:nth-child(3) {
 
 .creditpage section p {
 	text-align: justify;
+	vertical-align: text-bottom;
 }
 
 .creditpage section em {
@@ -1950,7 +1951,11 @@ div.item_9 img:nth-child(3) {
 	margin: 1em 2em 1em 0.5em;
 }
 
+.creditpage section a em + i  {
+	color: var(--green-color);
+	/* font-weight: 400; */
 
+}
 
 /* flipbook styling */
 .flipbook-viewport {
