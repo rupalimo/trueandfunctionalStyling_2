@@ -1497,7 +1497,7 @@ div.item_2 span {
 }
 
 div.item_2 span img,
-div.item_3 img:nth-of-type(4),
+div.item_3 img:nth-of-type(3),
 div.item_7 div.page-wrapper,
 div.item_8 a img {
 	border: 1px outset rgba(207, 207, 207, 0.336);
@@ -1516,7 +1516,7 @@ div.item_2 span img + img {
 }
 
 div.item_2 span img:hover,
-div.item_3 img:nth-of-type(4):hover,
+div.item_3 img:nth-of-type(3):hover,
 div.item_7 div.page-wrapper:hover,
 div.item_8 a img:hover {
 	z-index: 4;
@@ -1542,9 +1542,9 @@ div.item_5,
 		box-shadow: var(--green-shadow);
 	transition: 0.175s linear;
 } */
-div.item_3 {
+/* div.item_3 {
 	margin-right: 20%;
-}
+} */
 
 div.item_3 img:nth-of-type(2) {
 	margin-left: -4em;
@@ -1557,7 +1557,9 @@ div.item_3 div {
 }
 
 div.item_3 img#politics2 {
-	margin: 0 13.5%;
+margin: 0 10%;
+    position: relative;
+    left: -6%;
 }
 
 /* composition 04 ~~> .item_4 */
@@ -1684,7 +1686,8 @@ div.item_9 img:nth-child(3) {
 
 /* endless scroll single container */
 #endlessscroll {
-	max-height: 61em;
+	max-height: 100vh;
+	padding: 0 0.25em;
     overflow-y: auto;
     width: 63em;
     overflow-x: visible;
@@ -1701,9 +1704,9 @@ div.item_9 img:nth-child(3) {
 }
 
 #endlessscroll img {
-	padding: 0;
+	height: 100vh;
+	padding: 0.25em 0;
 }
-
 #endlessscroll::-webkit-scrollbar {
 	display: none;
   }
