@@ -1956,6 +1956,11 @@ div.item_9 img:nth-child(3) {
 	/* font-weight: 400; */
 
 }
+.creditpage section a:hover em + i  {
+	color: var(--text-color);
+	/* font-weight: 400; */
+
+}
 
 /* flipbook styling */
 .flipbook-viewport {
