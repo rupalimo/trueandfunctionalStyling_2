@@ -545,9 +545,13 @@
 
         <!-- video clone div -->
         <div class="container">
-          <div class="vidbutt"><button id="add">+</button>
-            <button id="delete">&#8211;</button>
-            <button id="play-pause-button">&#9658; <i class="material-icons">pause</i></button>
+          <div class="vidbutt">
+            <button title="Add" id="add">+</button>
+            <button title="Subtract" id="delete">&#8211;</button>
+            <button title="Play/Pause" id="play-pause-button">&#9658; <i class="material-icons">pause</i></button>
+            <button title="Volume On/Off" id="volume-button"><i class="material-icons">
+volume_up
+</i></button>
           </div>
 
           <div class="videocontainer" id="upload">
@@ -622,7 +626,8 @@
       
       <div class="item item_6">
         <div>
-          <button title="Play / Pause" id="play-pause-button-2">&#9658; <i class="material-icons">pause</i></button>
+          <button title="Play/Pause" id="play-pause-button-2">&#9658; <i class="material-icons">pause</i></button>
+          <button title="Volume On/Off" id=""><i class="material-icons">volume_up</i></button>
         </div>
         <video id="extended" width="1000px" title="Extended [2023]" loop autoplay muted>
           <source src="assets/vid/TrueAndFunctional_Extended_2023.mp4" type="video/mp4">
