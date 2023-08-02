@@ -2077,6 +2077,28 @@ lazyload class logic */
 
 /* BREAKPOINTS */
 
+/* height responsive */
+
+@media (max-height: 800px) {
+	.stickyindex {
+		transform: translateX(1px);
+		}
+
+.stickyindex, .index {
+		font-size: calc(1em - 0.35vh);
+	}
+}
+
+@media (max-height: 525px) {
+
+.stickyindex, .index {
+		font-size: 0.8rem;
+	}
+}
+
+
+
+
 /* IPAD MAX WIDTH 960PX */
 
 @media (max-width: 960px) {
@@ -2177,7 +2199,7 @@ lazyload class logic */
 }
 
 /* MOBILE LANDSCAPE*/
-@media only screen and (max-height: 400px) and (orientation: landscape) {
+@media only screen and (max-height: 480px) and (orientation: landscape) {
 	div.index div.thumbsindex,
 	div.stickyindex,
 	div.index,
