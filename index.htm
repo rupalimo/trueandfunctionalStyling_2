@@ -25,6 +25,12 @@
 
   <!-- for audio player and video controls icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script defer src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <!-- clone script -->
+  <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="js/cloneplay.js"></script>
 </head>
 <body>
 <!-- <body oncontextmenu="return false"> -->
@@ -339,7 +345,6 @@
           <a href="#subdued"><video muted autoplay loop poster="assets/img/thumbsindex/vid-1.gif" width="150px">
             <source src="assets/img/thumbsindex/vid-1.mp4" type="video/mp4" />
           </video></a>
-          
         </div>
 
         <div title="Extended [2023]" class="thumbs">
@@ -549,14 +554,17 @@
             <button title="Add" id="add">+</button>
             <button title="Subtract" id="delete">&#8211;</button>
             <button title="Play/Pause" id="play-pause-button">&#9658; <i class="material-icons">pause</i></button>
-            <button title="Volume On/Off" id="volume-button"><i class="material-icons">
+            <!-- <button title="Volume On/Off" id="volume-button"><i class="material-icons">
 volume_up
-</i></button>
+</i></button> -->
           </div>
 
           <div class="videocontainer" id="upload">
-            <video id="subduedvideo" autoplay loop muted>
+            <video id="subduedvideo" autoplay loop muted="true">
               <source src="assets/vid/TrueAndFunctional_Subdued_Colours_2023.mp4" type="video/mp4">
+              <source src="assets/vid/TrueAndFunctional_Subdued_Colours_2023_compress.mp4" type="video/mp4">
+              <source src="assets/vid/TrueAndFunctional_Subdued_Colours_2023_compress.webm" type="video/webm">
+              Your browser does not support HTML video.
             </video>
           </div>
         </div>
@@ -627,10 +635,13 @@ volume_up
       <div class="item item_6">
         <div>
           <button title="Play/Pause" id="play-pause-button-2">&#9658; <i class="material-icons">pause</i></button>
-          <button title="Volume On/Off" id=""><i class="material-icons">volume_up</i></button>
+          <button title="Volume On/Off" id="volumeSecond"><i class="material-icons">volume_up</i></button>
         </div>
         <video id="extended" width="1000px" title="Extended [2023]" loop autoplay muted>
           <source src="assets/vid/TrueAndFunctional_Extended_2023.mp4" type="video/mp4">
+          <source src="assets/vid/TrueAndFunctional_Extended_2023_compress.mp4" type="video/mp4">
+          <source src="assets/vid/TrueAndFunctional_Extended_2023_compress.webm" type="video/webm">
+              Your browser does not support HTML video.
         </video>
         <img src="assets/img/7232/POLITICS_V_ECONOMICS_1a.png" height="300px" title="Politics V Economics 1 [2023]">
       </div>
@@ -803,13 +814,8 @@ volume_up
   </div>
   <!-- <script src="js/lazyload.js"></script> -->
   <!-- videoplay script  -->
-  <script  src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-  <!-- clone script -->
-  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/cloneplay.js"></script>
-   <script async src="js/infscroll.js"></script>
-  <script async src="js/draggable.js"></script>
+  
+  <script defer src="js/draggable.js"></script>
   <!-- audioplay script -->
   <script async src="js/audioplayer.js"></script>
   <script type="text/javascript" src="js/turn/jquery.min.1.7.js"></script>
