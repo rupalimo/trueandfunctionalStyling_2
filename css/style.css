@@ -2098,6 +2098,20 @@ lazyload class logic */
 	.index {
 		font-size: calc(1em - 0.35vh);
 	}
+
+	.item_7 div {
+		height: 100vh;
+		    flex-wrap: wrap;
+    align-content: space-around;
+
+	}
+
+	div.item_7 div.flipbook-viewport {
+		position: relative;
+    top: -14vh;
+		z-index: 1;
+		padding-right: 4em;
+	}
 }
 
 @media (max-height: 525px) {
