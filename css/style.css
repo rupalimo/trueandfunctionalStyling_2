@@ -1377,9 +1377,10 @@ a:hover {
 /* composition 01 ~~> .item_1 */
 
 div.item_1 {
-	grid-template-rows: 70vh auto;
-	grid-template-columns: 300px 1000px 300px;
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 15rem 0 18rem;
 }
 
 div.item_1 .container {
@@ -1465,21 +1466,16 @@ div.item_6 div button:nth-of-type(2) i {
 div.item_1 #upload {
 }
 
-div.item_1 img {
-	grid-row: 2;
-	height: auto;
-	width: auto;
+#subduedvideo {
+	background-color: grey;
+}
+div.item_1 div img {
+height: 21vh;
+width: auto;
+position: relative;
+    bottom: 10vh;
 }
 
-div.item_1 img:first-of-type {
-	grid-column: 1 /2;
-	justify-self: end;
-	margin-top: -2em;
-}
-
-div.item_1 img + img {
-	grid-column: 2 /3;
-}
 
 /* composition 02 ~~> .item_2 */
 
@@ -2082,22 +2078,20 @@ lazyload class logic */
 @media (max-height: 800px) {
 	.stickyindex {
 		transform: translateX(1px);
-		}
+	}
 
-.stickyindex, .index {
+	.stickyindex,
+	.index {
 		font-size: calc(1em - 0.35vh);
 	}
 }
 
 @media (max-height: 525px) {
-
-.stickyindex, .index {
+	.stickyindex,
+	.index {
 		font-size: 0.8rem;
 	}
 }
-
-
-
 
 /* IPAD MAX WIDTH 960PX */
 
