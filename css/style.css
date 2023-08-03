@@ -1377,9 +1377,10 @@ a:hover {
 /* composition 01 ~~> .item_1 */
 
 div.item_1 {
-	grid-template-rows: 70vh auto;
-	grid-template-columns: 300px 1000px 300px;
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 15rem 0 18rem;
 }
 
 div.item_1 .container {
@@ -1415,11 +1416,13 @@ div.item_6 button:hover {
 }
 
 div.item_1 .container .vidbutt {
-	top: 4em;
-	position: absolute;
-	display: block;
-	right: 26.5em;
-	z-index: 99;
+width: inherit;
+    position: absolute;
+    display: flex;
+   
+    z-index: 99;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 div.item_1 .container button,
@@ -1429,15 +1432,25 @@ div.item_6 div button,
 	border-color: var(--green-color);
 	color: var(--darkgreen-color);
 	margin-bottom: 0.25em;
+
+
+}
+
+div.item_1 .container button {
+		margin-left: 4px;
+	position: relative;
+	top: -25px;
 }
 
 div.item_1 .container button:nth-child(1) {
 	border-right: dotted;
-	transform: translateX(4px);
+	transform: translateX(1px);
+	
 }
 
 div.item_1 .container button:nth-child(2) {
 	border-left: none;
+		margin-left: 0;
 }
 
 div.item_1 .container button:nth-of-type(3),
@@ -1465,21 +1478,18 @@ div.item_6 div button:nth-of-type(2) i {
 div.item_1 #upload {
 }
 
-div.item_1 img {
-	grid-row: 2;
-	height: auto;
-	width: auto;
+#subduedvideo {
+justify-self: flex-end;
+justify-self: self-end;
 }
 
-div.item_1 img:first-of-type {
-	grid-column: 1 /2;
-	justify-self: end;
-	margin-top: -2em;
+div.item_1 div img {
+height: 21vh;
+width: auto;
+position: relative;
+    bottom: 10vh;
 }
 
-div.item_1 img + img {
-	grid-column: 2 /3;
-}
 
 /* composition 02 ~~> .item_2 */
 
@@ -2077,6 +2087,40 @@ lazyload class logic */
 
 /* BREAKPOINTS */
 
+/* height responsive */
+
+@media (max-height: 800px) {
+	.stickyindex {
+		transform: translateX(1px);
+	}
+
+	.stickyindex,
+	.index {
+		font-size: calc(1em - 0.35vh);
+	}
+
+	.item_7 div {
+		height: 100vh;
+		    flex-wrap: wrap;
+    align-content: space-around;
+
+	}
+
+	div.item_7 div.flipbook-viewport {
+		position: relative;
+    top: -14vh;
+		z-index: 1;
+		padding-right: 4em;
+	}
+}
+
+@media (max-height: 525px) {
+	.stickyindex,
+	.index {
+		font-size: 0.8rem;
+	}
+}
+
 /* IPAD MAX WIDTH 960PX */
 
 @media (max-width: 960px) {
@@ -2177,7 +2221,7 @@ lazyload class logic */
 }
 
 /* MOBILE LANDSCAPE*/
-@media only screen and (max-height: 400px) and (orientation: landscape) {
+@media only screen and (max-height: 480px) and (orientation: landscape) {
 	div.index div.thumbsindex,
 	div.stickyindex,
 	div.index,
