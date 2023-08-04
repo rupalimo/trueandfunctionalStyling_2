@@ -1616,6 +1616,11 @@ div.item_6 div button:nth-of-type(1) {
 	margin-right: 4px;
 }
 
+div.item_6 video {
+	height: 60vh;
+	width: auto;
+}
+
 div.item_6 img {
 	width: auto;
 	height: 10%;
