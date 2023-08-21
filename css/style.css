@@ -1839,40 +1839,57 @@ div.item_9 img:nth-child(3) {
 }
 
 .creditpage {
-	/* padding-top: 100%; */
-	margin-left: 3em;
-	width: 27%;
-	padding-right: 2em;
-	/* height: 223vh; */
+background-color: var(--green-color);
+margin: 0;
+padding: 0;
+width: 100%;
 }
 
-.creditpage a.sticky {
+#horizontalscroll a.sticky {
 	top: 1em;
 	font-family: var(--serif-text);
 	border: 1px solid;
 	padding: 0.1em 0.85em 0.25em;
+	height: 2em;
 	background-color: #ffffffb3;
 	border-radius: 1em;
 	z-index: 100;
+	cursor: pointer;
 }
 
-.creditpage a.sticky:first-of-type {
+#horizontalscroll a.sticky:first-of-type {
 	margin-left: -0.85em;
 }
 
-.creditpage a.sticky:first-of-type,
-.creditpage a.sticky:first-of-type:visited,
-.creditpage a.sticky:first-of-type:active {
+#horizontalscroll a.sticky:first-of-type,
+#horizontalscroll a.sticky:first-of-type:visited,
+#horizontalscroll a.sticky:first-of-type:active {
 	border-color: #fff;
 }
 
-.creditpage a.sticky + a.sticky {
+#horizontalscroll a.sticky + a.sticky, #indexToggle:hover {
 	border-color: var(--green-color);
 }
 
-.creditpage a.sticky:hover {
+#horizontalscroll a.sticky:hover, #indexToggle:hover {
 	background-color: var(--green-color);
 	color: var(--text-color);
+}
+
+#indexToggle {
+	top: 1em;
+	font-family: var(--serif-text);
+	border: 1px solid;
+	padding: 0.1em 0.85em 0.25em;
+	height: 2em;
+	background-color: #ffffffb3;
+	border-radius: 1em;
+	z-index: 100;
+	cursor: pointer;
+}
+
+#indDisplay {
+	display: none;
 }
 
 .creditpage section {
