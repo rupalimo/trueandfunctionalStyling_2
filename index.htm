@@ -25,15 +25,28 @@
 
   <!-- for audio player and video controls icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <script defer src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <!-- clone script -->
   <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+<script>
+$(window).load(function () {
+  $(".preloader").delay(1000).fadeOut("slow");
+  $("#overlayer").delay(1000).fadeOut("slow");
+})
+</script>
   <script defer src="js/cloneplay.js"></script>
 </head>
 <body>
 <!-- <body oncontextmenu="return false"> -->
+  <div id="overlayer"></div>
+  <div class="preloader">
+    <div class="loading">
+    </div>
+    <p>Volume I is loading...</p>
+  </div>
   <div class="fixed">
   <nav>
     <a  href="https://www.trueandfunctional.com/" title="View True And Functional Volumes A - H"
