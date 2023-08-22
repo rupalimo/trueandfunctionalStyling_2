@@ -1972,7 +1972,7 @@ nav a:nth-child(2) {
 	border-radius: 0;
 	padding: 0.1em 0.85em 0.25em;
 	margin-left: auto;
-		z-index: 101;
+		z-index: 99;
 }
 
 #indexToggle:hover {
@@ -1988,6 +1988,7 @@ nav a:nth-child(2) {
 	position: absolute;
 	/* background-color: var(--green-color);*/
 	background-color: #33ff00f0;
+	z-index: 80;
 }
 
 .creditpage {
