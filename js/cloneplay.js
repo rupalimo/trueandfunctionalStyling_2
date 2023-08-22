@@ -122,3 +122,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
+// index toggle
+var indButton = document.getElementById('indexToggle');
+
+indButton.onclick = function() {
+    var inDiv = document.getElementById('indDisplay');
+    if (inDiv.style.display === 'none') {
+        inDiv.style.display = 'block';
+    }
+    else {
+        inDiv.style.display = 'none';
+    }
+};
