@@ -113,13 +113,14 @@ a:hover {
 }
 
 .index {
-	margin-left: 1em;
+
 	margin-right: 50%;
-	width: 28vw;
+	width: 60vh;
 }
 
 .index .row {
 	width: inherit;
+	/* max-width: 350px; */
 }
 
 .index a,
@@ -145,10 +146,9 @@ a:hover {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(8, auto);
-
 	margin: 0;
 	top: 17%;
-	right: 4em;
+	right: 20vh;
 	position: absolute;
 	max-width: 35vw;
 }
