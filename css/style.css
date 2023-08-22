@@ -109,14 +109,16 @@ a:hover {
 	position: -webkit-sticky;
 	left: 1em;
 	z-index: 90;
-	margin-left: 20vh;
+	margin-left: calc(10% - 2vh);
 
 }
 
 .index {
 	margin-left: -1em;
 	margin-right: 50%;
-	width: 60vh;
+	    min-width: 42vw;
+	/* max-width: 60vh;
+	width: calc(8em - 2vh); */
 }
 
 .index .row {
@@ -144,14 +146,15 @@ a:hover {
 } */
 
 .thumbsindex {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(8, auto);
-	margin: 0;
-	top: 17%;
-	right: 20vh;
-	position: absolute;
-	max-width: 35vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, auto);
+    margin: 0;
+    top: 17%;
+    right: calc(10% - 2vh);
+    position: absolute;
+    width: calc(50% - 10vw);
+    max-width: 600px;
 }
 
 .thumbs {
@@ -1922,13 +1925,6 @@ div.item_9 img:nth-child(3) {
 	position: fixed;
 }
 
-.creditpage {
-	background-color: var(--green-color);
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
 div.fixed nav {
 	display: flex;
 	position: absolute;
@@ -1942,29 +1938,24 @@ nav a,
 	border: 1px solid #FFF;
 	height: 2em;
 	background-color: #ffffffb3;
-	z-index: 100;
 	cursor: pointer;
 }
 
 nav a {
 	padding: 0.1em 0.5em 0.25em;
+		z-index: 100;
 }
 
 nav a:hover {
-	color: var(--text-color);
-}
-
-nav a:focus,
-nav a:active {
-	color: var(--green-color);
+text-decoration: none;
 }
 
 nav a:first-child {
 	border-color: #fff;
 }
 
-nav a:first-of-type:hover,
-nav a:nth-child(2) {
+
+nav a:nth-child(2), nav a:focus {
 	text-decoration: underline;
 	text-decoration-color: var(--green-color);
 	text-decoration-thickness: 2px;
@@ -1975,134 +1966,154 @@ nav a:nth-child(2) {
 	transform: translateX(-1px);
 }
 
+
 #indexToggle {
 	border-color: var(--green-color);
 	border-radius: 0;
 	padding: 0.1em 0.85em 0.25em;
 	margin-left: auto;
-}
-
-#indexToggle>* {
-	align-self: end;
+		z-index: 101;
 }
 
 #indexToggle:hover {
-	background-color: var(--green-color);
+	color: var(--green-color);
 }
+
+/* CREDIT PAGE OVERLAY */
 
 #indDisplay {
 	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	/* background-color: var(--green-color);*/
+	background-color: #33ff00f0;
+}
+
+.creditpage {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+
 }
 
 .creditpage section {
 	display: flex;
 	flex-direction: column;
-	padding-right: 12px;
+	width: calc(10em + 1vh);
+	min-width: 600px;
+	padding: 4em 0;
+	margin: 0 auto;
 	line-height: 1.25em;
-	margin-bottom: 10em;
 	font-family: var(--serif-text);
+	background-color: #33ff00f0;
+
 }
 
-.creditpage section div.titleblock {
-	height: 120vh;
-	margin-top: 30%;
+.creditpage div.titleblock {
 	cursor: default;
 	display: flex;
 	flex-direction: column;
 }
 
-.creditpage section div.titleblock img:nth-of-type(1) {
-	max-width: 8vw;
-	min-width: calc(10em + 1vw);
-	filter: drop-shadow(0.65px 0.65px #ffffff70);
+.creditpage div.titleblock img:nth-of-type(1) {
+	max-width: 6vw;
+	min-width: calc(7em + 1vw);
+	
 }
 
-.creditpage section div.titleblock img:nth-of-type(2) {
-	max-width: 50%;
-	min-width: calc(16em + 0.25vw);
+.creditpage div.titleblock img:nth-of-type(2) {
+	max-width: 40%;
+	min-width: calc(10em + 0.25vw);
 	margin-left: -5px;
-	filter: drop-shadow(0.65px 0.65px #ffffff70);
+
 }
 
-.creditpage section div.titleblock h1 {
+.creditpage div.titleblock h1 {
 	margin-top: 0;
 	margin-bottom: 0;
 	text-shadow: 0.65px 0.65px #ffffff70;
 }
 
-.creditpage section div.titleblock h1:nth-of-type(2) {
+.creditpage div.titleblock h1:nth-of-type(2) {
 	margin-left: 2em;
 }
 
-.creditpage section div.titleblock h3 {
+.creditpage div.titleblock h3 {
 	font-weight: 400;
 	text-shadow: 0.65px 0.65px #ffffff70;
 }
 
-.creditpage section p,
-.creditpage section div,
-.creditpage section span,
-.creditpage section object,
-.creditpage section h5 {
+.creditpage p,
+.creditpage div,
+.creditpage span,
+.creditpage object,
+.creditpage h5 {
 	z-index: 1;
 	cursor: default;
 }
 
-.creditpage section p {
+.creditpage p {
 	text-align: justify;
 	vertical-align: text-bottom;
 }
 
-.creditpage section em {
+.creditpage em {
 	line-height: 1.25em;
 	font-style: normal;
 	font-family: var(--serif-text);
 	font-weight: 600;
 }
 
-.creditpage section i {
+.creditpage i {
 	font-family: var(--serif-text);
 	font-style: normal;
 	font-weight: 600;
 }
 
-.creditpage section h5 {
+.creditpage h5 {
 	text-transform: uppercase;
-	border-bottom: 1px solid var(--green-color);
+	border-bottom: 2px solid #FFF;
+	padding-bottom: 2px;
 	letter-spacing: 0.05em;
 	margin-bottom: 0.85em;
 }
 
-.creditpage section h5:nth-of-type(2),
-.creditpage section h5:nth-of-type(3) {
+.creditpage h5:nth-of-type(2),
+.creditpage h5:nth-of-type(3) {
 	margin-top: 4em;
 }
 
-.creditpage section h5+p {
+.creditpage h5 + p {
 	margin: 0;
 }
 
-.creditpage section span {
+.creditpage span {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: flex-start;
 }
 
-.creditpage section span img {
+.creditpage span:first-of-type img:first-of-type {
+	margin: 1em 4em 1em -1em;
+}
+
+.creditpage span:nth-of-type(2) {
+    justify-content: space-between;	
+}
+
+.creditpage span img {
 	margin: 1em 2em 1em 0.5em;
 }
 
-.creditpage section a em+i {
-	color: var(--green-color);
+
+.creditpage a em + i, .creditpage a:hover, .creditpage a:hover em + i  {
+	color: #FFF;
 	/* font-weight: 400; */
 }
 
-.creditpage section a:hover em+i {
-	color: var(--text-color);
-	/* font-weight: 400; */
-}
 
 /* flipbook styling */
 .flipbook-viewport {
@@ -2251,6 +2262,16 @@ lazyload class logic */
 }
 
 /* IPAD MAX WIDTH 960PX */
+@media (max-width: 1280px) {
+#horizontalscroll .stickyindex {
+margin-left: 5vw;
+} 
+
+#horizontalscroll .thumbsindex {
+	right: 5vw;
+	width: 40vw;
+}
+}
 
 @media (max-width: 960px) {
 	div.index div.thumbsindex {
