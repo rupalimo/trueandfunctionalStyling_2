@@ -109,14 +109,16 @@ a:hover {
 	position: -webkit-sticky;
 	left: 1em;
 	z-index: 90;
-	margin-left: 20vh;
+	margin-left: calc(10% - 2vh);
 
 }
 
 .index {
 margin-left: -1em;
 	margin-right: 50%;
-	width: 60vh;
+	    min-width: 42vw;
+	/* max-width: 60vh;
+	width: calc(8em - 2vh); */
 }
 
 .index .row {
@@ -144,14 +146,15 @@ margin-left: -1em;
 }
 
 .thumbsindex {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(8, auto);
-	margin: 0;
-	top: 17%;
-	right: 20vh;
-	position: absolute;
-	max-width: 35vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, auto);
+    margin: 0;
+    top: 17%;
+    right: calc(10% - 2vh);
+    position: absolute;
+    width: calc(50% - 10vw);
+    max-width: 600px;
 }
 
 .thumbs {
@@ -1845,13 +1848,6 @@ div.item_9 img:nth-child(3) {
 	position: fixed;
 }
 
-.creditpage {
-background-color: var(--green-color);
-margin: 0;
-padding: 0;
-width: 100%;
-}
-
 div.fixed nav {
 	display: flex;
 	position: absolute;
@@ -1875,10 +1871,6 @@ nav a {
 nav a:hover {
 text-decoration: none;
 }
-/* 
-nav a:focus, nav a:active {
-	color: var(--green-color);
-} */
 
 nav a:first-child {
 	border-color:  #fff;
@@ -1908,20 +1900,36 @@ nav a:nth-child(2) {
 	color: var(--green-color);
 }
 
+/* CREDIT PAGE OVERLAY */
+
 #indDisplay {
 	display: none;
 	width: 100vw;
 	height: 100vh;
+	position: absolute;
+	/* background-color: var(--green-color);*/
+	background-color: #33ff00f0;
+}
+
+.creditpage {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+
 }
 
 .creditpage section {
 	display: flex;
 	flex-direction: column;
-	width: 60vh;
+	width: calc(10em + 1vh);
+	min-width: 550px;
 	padding: 4em 0;
 	margin: 0 auto;
 	line-height: 1.25em;
 	font-family: var(--serif-text);
+	background-color: #33ff00f0;
+
 }
 
 .creditpage div.titleblock {
@@ -2014,17 +2022,12 @@ nav a:nth-child(2) {
 	margin: 1em 2em 1em 0.5em;
 }
 
-.creditpage a em + i {
+
+.creditpage a em + i, .creditpage a:hover, .creditpage a:hover em + i  {
 	color: #FFF;
 	/* font-weight: 400; */
 }
-.creditpage a:hover {
-	color: var(--darkgreen-color);
-}
-.creditpage a:hover em + i {
-	color: var(--darkgreen-color);
 
-}
 
 /* flipbook styling */
 .flipbook-viewport {
@@ -2174,6 +2177,16 @@ lazyload class logic */
 }
 
 /* IPAD MAX WIDTH 960PX */
+@media (max-width: 1280px) {
+#horizontalscroll .stickyindex {
+margin-left: 5vw;
+} 
+
+#horizontalscroll .thumbsindex {
+	right: 5vw;
+	width: 40vw;
+}
+}
 
 @media (max-width: 960px) {
 	div.index div.thumbsindex {
