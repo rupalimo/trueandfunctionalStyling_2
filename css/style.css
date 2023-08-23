@@ -2012,6 +2012,9 @@ nav a:nth-child(2) {
 	background-color: #33ff00f0;
 	height: 100vh;
 	overflow-y: scroll;
+	/* hiding scrollbar */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 .creditpage div.titleblock {
