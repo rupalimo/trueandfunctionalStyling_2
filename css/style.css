@@ -2010,7 +2010,8 @@ nav a:nth-child(2) {
 	line-height: 1.25em;
 	font-family: var(--serif-text);
 	background-color: #33ff00f0;
-
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 .creditpage div.titleblock {

@@ -126,12 +126,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // index toggle
 var indButton = document.getElementById('indexToggle');
+var indClose = document.getElementById('indexClose');
 
 indButton.onclick = function () {
     var inDiv = document.getElementById('indDisplay');
     if (inDiv.style.display === 'none') {
         inDiv.style.display = 'block';
     } else {
-        inDiv.style.display = 'none';
+        inDiv.style.display = 'block';
     }
 };
+
+indClose.onclick = function () {
+    var inDiv = document.getElementById('indDisplay');
+    if (inDiv.style.display === 'block') {
+        inDiv.style.display = 'none';
+    } else {
+        inDiv.style.display = 'none';
+    }
+}
