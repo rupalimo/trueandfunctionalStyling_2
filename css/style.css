@@ -2419,24 +2419,37 @@ lazyload class logic */
 	div.stickyindex,
 	div.index,
 	div.audio-player,
-	div.item {
+	div.item,
+	div.fixed nav {
 		display: none;
 	}
 
 	div#mobile-preview {
-		display: block;
+		display: flex;
+		flex-direction: column;
 	}
 
-	div#mobile-preview p {
+	div#mobile-preview nav {
+		display: flex;
+	}
+
+	div#mobile-preview section {
+		padding: 45px 8px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	div#mobile-preview section p {
+		padding: 0 0.5em;
+	}
+
+	div#mobile-preview section p em {
+		font-style: normal;
+		font-weight: 600;
 	}
 
 	div#mobile-preview img {
-		display: none;
-	}
-
-	.creditpage section div.titleblock {
-		height: fit-content;
-		margin-top: 4em;
+		width: 50vh;
 	}
 }
 
