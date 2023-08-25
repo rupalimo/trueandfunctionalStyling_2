@@ -1929,9 +1929,9 @@ div.fixed nav {
 }
 
 nav a,
-#indexToggle {
+#indexToggle,
+#indexClose {
 	font-family: var(--serif-text);
-	border: 1px solid #fff;
 	height: 2em;
 	background-color: #ffffffb3;
 	cursor: pointer;
@@ -1962,12 +1962,17 @@ nav a:nth-child(2) {
 	transform: translateX(-1px);
 }
 
-#indexToggle {
-	border-color: var(--green-color);
+#indexToggle,
+#indexClose {
 	border-radius: 0;
 	padding: 0.1em 0.85em 0.25em;
 	margin-left: auto;
 	z-index: 99;
+	border: 1px solid;
+}
+
+#indexToggle {
+	border-color: var(--green-color);
 }
 
 #indexToggle:hover {
@@ -2008,6 +2013,19 @@ nav a:nth-child(2) {
 	/* hiding scrollbar */
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+}
+
+.creditpage section #indexClose {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 50px;
+	border-color: #fff;
+}
+.creditpage section #indexClose:hover {
+	border-color: var(--green-color);
+	color: var(--green-color);
+	background-color: #fff;
 }
 
 .creditpage div.titleblock {
