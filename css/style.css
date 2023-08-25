@@ -1988,7 +1988,7 @@ nav a:nth-child(2) {
 	height: 100vh;
 	position: absolute;
 	/* background-color: var(--green-color);*/
-	background-color: #33ff00f0;
+	background-color: var(--green-color);
 	z-index: 80;
 }
 
@@ -2008,7 +2008,7 @@ nav a:nth-child(2) {
 	margin: 0 auto;
 	line-height: 1.25em;
 	font-family: var(--serif-text);
-	background-color: #33ff00f0;
+	background-color: var(--green-color);
 	height: 100vh;
 	overflow-y: scroll;
 	/* hiding scrollbar */
