@@ -126,9 +126,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // index toggle
 var indButton = document.getElementById('indexToggle');
+var mobButton = document.getElementById('indexToggle2');
 var indClose = document.getElementById('indexClose');
 
 indButton.onclick = function () {
+    var inDiv = document.getElementById('indDisplay');
+    if (inDiv.style.display === 'none') {
+        inDiv.style.display = 'block';
+    } else {
+        inDiv.style.display = 'block';
+    }
+};
+
+mobButton.onclick = function () {
     var inDiv = document.getElementById('indDisplay');
     if (inDiv.style.display === 'none') {
         inDiv.style.display = 'block';

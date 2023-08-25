@@ -1929,7 +1929,7 @@ div.fixed nav {
 }
 
 nav a,
-#indexToggle,
+#indexToggle, #indexToggle2, 
 #indexClose {
 	font-family: var(--serif-text);
 	height: 2em;
@@ -1962,7 +1962,7 @@ nav a:nth-child(2) {
 	transform: translateX(-1px);
 }
 
-#indexToggle,
+#indexToggle, #indexToggle2, 
 #indexClose {
 	border-radius: 0;
 	padding: 0.1em 0.85em 0.25em;
@@ -1971,12 +1971,12 @@ nav a:nth-child(2) {
 	border: 1px solid;
 }
 
-#indexToggle {
+#indexToggle, #indexToggle2 {
 	border-color: var(--green-color);
 	font-size: inherit;
 }
 
-#indexToggle:hover {
+#indexToggle:hover, #indexToggle2:hover {
 	color: var(--green-color);
 }
 
