@@ -2342,13 +2342,13 @@ lazyload class logic */
 	div.creditpage,
 	#horizontalscroll div.title {
 		width: 100%;
-		max-width: 400px;
 	}
 
 	div.creditpage {
 		margin: 0;
 		padding: 1em;
 		height: fit-content;
+	
 	}
 
 	div.creditpage a {
@@ -2361,6 +2361,7 @@ lazyload class logic */
 
 	div.creditpage section {
 		padding: 1em;
+			min-width: 100%;
 	}
 
 	div.creditpage section div.titleblock {
