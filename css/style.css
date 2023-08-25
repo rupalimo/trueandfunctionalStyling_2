@@ -110,7 +110,6 @@ a:hover {
 	left: 1em;
 	z-index: 90;
 	margin-left: calc(10% - 2vh);
-
 }
 
 .index {
@@ -308,7 +307,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(1):hover~.thumbsindex .thumbs:nth-of-type(1) a {
+.index .row:nth-child(1):hover ~ .thumbsindex .thumbs:nth-of-type(1) a {
 	border: 1.5px outset var(--green-color);
 
 	position: relative;
@@ -334,7 +333,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(2):hover~.thumbsindex .thumbs:nth-child(2) a {
+.index .row:nth-child(2):hover ~ .thumbsindex .thumbs:nth-child(2) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -359,7 +358,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(3):hover~.thumbsindex .thumbs:nth-child(3) a {
+.index .row:nth-child(3):hover ~ .thumbsindex .thumbs:nth-child(3) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -384,7 +383,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(4):hover~.thumbsindex .thumbs:nth-child(4) a {
+.index .row:nth-child(4):hover ~ .thumbsindex .thumbs:nth-child(4) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -409,7 +408,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(5):hover~.thumbsindex .thumbs:nth-child(5) a {
+.index .row:nth-child(5):hover ~ .thumbsindex .thumbs:nth-child(5) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -434,7 +433,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(6):hover~.thumbsindex .thumbs:nth-child(6) a {
+.index .row:nth-child(6):hover ~ .thumbsindex .thumbs:nth-child(6) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -459,7 +458,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(7):hover~.thumbsindex .thumbs:nth-child(7) a {
+.index .row:nth-child(7):hover ~ .thumbsindex .thumbs:nth-child(7) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -484,7 +483,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(8):hover~.thumbsindex .thumbs:nth-child(8) a {
+.index .row:nth-child(8):hover ~ .thumbsindex .thumbs:nth-child(8) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -509,7 +508,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(9):hover~.thumbsindex .thumbs:nth-child(9) a {
+.index .row:nth-child(9):hover ~ .thumbsindex .thumbs:nth-child(9) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -534,7 +533,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(10):hover~.thumbsindex .thumbs:nth-child(10) a {
+.index .row:nth-child(10):hover ~ .thumbsindex .thumbs:nth-child(10) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -559,7 +558,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(11):hover~.thumbsindex .thumbs:nth-child(11) a {
+.index .row:nth-child(11):hover ~ .thumbsindex .thumbs:nth-child(11) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -584,7 +583,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(12):hover~.thumbsindex .thumbs:nth-child(12) a {
+.index .row:nth-child(12):hover ~ .thumbsindex .thumbs:nth-child(12) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -609,7 +608,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(13):hover~.thumbsindex .thumbs:nth-child(13) a {
+.index .row:nth-child(13):hover ~ .thumbsindex .thumbs:nth-child(13) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -634,7 +633,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(14):hover~.thumbsindex .thumbs:nth-child(14) a {
+.index .row:nth-child(14):hover ~ .thumbsindex .thumbs:nth-child(14) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -659,7 +658,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(15):hover~.thumbsindex .thumbs:nth-child(15) a {
+.index .row:nth-child(15):hover ~ .thumbsindex .thumbs:nth-child(15) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -684,7 +683,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(16):hover~.thumbsindex .thumbs:nth-child(16) a {
+.index .row:nth-child(16):hover ~ .thumbsindex .thumbs:nth-child(16) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -709,7 +708,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(17):hover~.thumbsindex .thumbs:nth-child(17) a {
+.index .row:nth-child(17):hover ~ .thumbsindex .thumbs:nth-child(17) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -734,7 +733,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(18):hover~.thumbsindex .thumbs:nth-child(18) a {
+.index .row:nth-child(18):hover ~ .thumbsindex .thumbs:nth-child(18) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -759,7 +758,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(19):hover~.thumbsindex .thumbs:nth-child(19) a {
+.index .row:nth-child(19):hover ~ .thumbsindex .thumbs:nth-child(19) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -784,7 +783,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(20):hover~.thumbsindex .thumbs:nth-child(20) a {
+.index .row:nth-child(20):hover ~ .thumbsindex .thumbs:nth-child(20) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -809,7 +808,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(21):hover~.thumbsindex .thumbs:nth-child(21) a {
+.index .row:nth-child(21):hover ~ .thumbsindex .thumbs:nth-child(21) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -834,7 +833,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(22):hover~.thumbsindex .thumbs:nth-child(22) a {
+.index .row:nth-child(22):hover ~ .thumbsindex .thumbs:nth-child(22) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -859,7 +858,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(23):hover~.thumbsindex .thumbs:nth-child(23) a {
+.index .row:nth-child(23):hover ~ .thumbsindex .thumbs:nth-child(23) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -884,7 +883,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(24):hover~.thumbsindex .thumbs:nth-child(24) a {
+.index .row:nth-child(24):hover ~ .thumbsindex .thumbs:nth-child(24) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -909,7 +908,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(25):hover~.thumbsindex .thumbs:nth-child(25) a {
+.index .row:nth-child(25):hover ~ .thumbsindex .thumbs:nth-child(25) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -934,7 +933,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(26):hover~.thumbsindex .thumbs:nth-child(26) a {
+.index .row:nth-child(26):hover ~ .thumbsindex .thumbs:nth-child(26) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -959,7 +958,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(27):hover~.thumbsindex .thumbs:nth-child(27) a {
+.index .row:nth-child(27):hover ~ .thumbsindex .thumbs:nth-child(27) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -984,7 +983,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(28):hover~.thumbsindex .thumbs:nth-child(28) a {
+.index .row:nth-child(28):hover ~ .thumbsindex .thumbs:nth-child(28) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1009,7 +1008,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(29):hover~.thumbsindex .thumbs:nth-child(29) a {
+.index .row:nth-child(29):hover ~ .thumbsindex .thumbs:nth-child(29) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1034,7 +1033,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(30):hover~.thumbsindex .thumbs:nth-child(30) a {
+.index .row:nth-child(30):hover ~ .thumbsindex .thumbs:nth-child(30) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1059,7 +1058,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(31):hover~.thumbsindex .thumbs:nth-child(31) a {
+.index .row:nth-child(31):hover ~ .thumbsindex .thumbs:nth-child(31) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1084,7 +1083,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(32):hover~.thumbsindex .thumbs:nth-child(32) a {
+.index .row:nth-child(32):hover ~ .thumbsindex .thumbs:nth-child(32) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1109,7 +1108,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(33):hover~.thumbsindex .thumbs:nth-child(33) a {
+.index .row:nth-child(33):hover ~ .thumbsindex .thumbs:nth-child(33) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1134,7 +1133,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(34):hover~.thumbsindex .thumbs:nth-child(34) a {
+.index .row:nth-child(34):hover ~ .thumbsindex .thumbs:nth-child(34) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1159,7 +1158,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(35):hover~.thumbsindex .thumbs:nth-child(35) a {
+.index .row:nth-child(35):hover ~ .thumbsindex .thumbs:nth-child(35) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1184,7 +1183,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(36):hover~.thumbsindex .thumbs:nth-child(36) a {
+.index .row:nth-child(36):hover ~ .thumbsindex .thumbs:nth-child(36) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1511,8 +1510,6 @@ div.item_6 div button,
 	border-color: var(--green-color);
 	color: var(--darkgreen-color);
 	margin-bottom: 0.25em;
-
-
 }
 
 div.item_1 .container button {
@@ -1524,7 +1521,6 @@ div.item_1 .container button {
 div.item_1 .container button:nth-child(1) {
 	border-right: dotted;
 	transform: translateX(1px);
-
 }
 
 div.item_1 .container button:nth-child(2) {
@@ -1554,7 +1550,8 @@ div.item_6 div button:nth-of-type(2) i {
 	vertical-align: sub;
 }
 
-div.item_1 #upload {}
+div.item_1 #upload {
+}
 
 #subduedvideo {
 	justify-self: flex-end;
@@ -1567,7 +1564,6 @@ div.item_1 div img {
 	position: relative;
 	bottom: 10vh;
 }
-
 
 /* composition 02 ~~> .item_2 */
 
@@ -1602,7 +1598,7 @@ div.item_2 span img:nth-of-type(2) {
 	z-index: 2;
 }
 
-div.item_2 span img+img {
+div.item_2 span img + img {
 	margin-left: -125px;
 }
 
@@ -1615,7 +1611,7 @@ div.item_8 a img:hover {
 	transition: 0.175s linear;
 }
 
-div.item_2 div+img {
+div.item_2 div + img {
 	height: 100%;
 	width: auto;
 	padding: 1em 0;
@@ -1724,7 +1720,7 @@ div.item_7 div.flipbook-viewport {
 	padding: 1em;
 }
 
-div.item_7 div.flipbook-viewport+img {
+div.item_7 div.flipbook-viewport + img {
 	transform: translateX(-1.5em);
 }
 
@@ -1859,8 +1855,8 @@ div.item_9 img:nth-child(3) {
 	background: #ffffff;
 	overflow: hidden;
 	position: fixed;
-	bottom: 1em;
-	right: 3em;
+	bottom: 12px;
+	right: 12px;
 	border: 1.5px outset var(--green-color);
 }
 
@@ -1886,7 +1882,7 @@ div.item_9 img:nth-child(3) {
 	padding: 0 1em;
 }
 
-.audio-player .controls>* {
+.audio-player .controls > * {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1913,7 +1909,7 @@ div.item_9 img:nth-child(3) {
 	display: flex;
 }
 
-.audio-player .controls .time>* {
+.audio-player .controls .time > * {
 	padding: 2px;
 }
 
@@ -1935,7 +1931,7 @@ div.fixed nav {
 nav a,
 #indexToggle {
 	font-family: var(--serif-text);
-	border: 1px solid #FFF;
+	border: 1px solid #fff;
 	height: 2em;
 	background-color: #ffffffb3;
 	cursor: pointer;
@@ -1954,7 +1950,6 @@ nav a:first-child {
 	border-color: #fff;
 }
 
-
 nav a:nth-child(2),
 nav a:focus {
 	text-decoration: underline;
@@ -1966,7 +1961,6 @@ nav a:focus {
 nav a:nth-child(2) {
 	transform: translateX(-1px);
 }
-
 
 #indexToggle {
 	border-color: var(--green-color);
@@ -1997,7 +1991,6 @@ nav a:nth-child(2) {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-
 }
 
 .creditpage section {
@@ -2026,14 +2019,12 @@ nav a:nth-child(2) {
 .creditpage div.titleblock img:nth-of-type(1) {
 	max-width: 6vw;
 	min-width: calc(7em + 1vw);
-
 }
 
 .creditpage div.titleblock img:nth-of-type(2) {
 	max-width: 40%;
 	min-width: calc(10em + 0.25vw);
 	margin-left: -5px;
-
 }
 
 .creditpage div.titleblock h1 {
@@ -2080,7 +2071,7 @@ nav a:nth-child(2) {
 
 .creditpage h5 {
 	text-transform: uppercase;
-	border-bottom: 2px solid #FFF;
+	border-bottom: 2px solid #fff;
 	padding-bottom: 2px;
 	letter-spacing: 0.05em;
 	margin-bottom: 0.85em;
@@ -2091,7 +2082,7 @@ nav a:nth-child(2) {
 	margin-top: 4em;
 }
 
-.creditpage h5+p {
+.creditpage h5 + p {
 	margin: 0;
 }
 
@@ -2114,14 +2105,12 @@ nav a:nth-child(2) {
 	margin: 1em 2em 1em 0.5em;
 }
 
-
-.creditpage a em+i,
+.creditpage a em + i,
 .creditpage a:hover,
-.creditpage a:hover em+i {
-	color: #FFF;
+.creditpage a:hover em + i {
+	color: #fff;
 	/* font-weight: 400; */
 }
-
 
 /* flipbook styling */
 .flipbook-viewport {
@@ -2246,7 +2235,6 @@ lazyload class logic */
 		height: 100vh;
 		flex-wrap: wrap;
 		align-content: space-around;
-
 	}
 
 	div.item_7 div.flipbook-viewport {
@@ -2262,7 +2250,6 @@ lazyload class logic */
 	.goat_img {} */
 
 @media (max-height: 525px) {
-
 	.stickyindex,
 	.index {
 		font-size: 0.8rem;
@@ -2288,9 +2275,7 @@ lazyload class logic */
 }
 
 /* MOBILE PORTRAIT */
-@media only screen and (orientation: portrait),
-screen and (max-width: 640px) {
-
+@media only screen and (orientation: portrait), screen and (max-width: 640px) {
 	div.stickyindex,
 	div.index,
 	div.audio-player,
@@ -2343,11 +2328,11 @@ screen and (max-width: 640px) {
 		margin-top: 4em;
 	}
 
-	div.creditpage section h5+span {
+	div.creditpage section h5 + span {
 		height: 120px;
 	}
 
-	div.creditpage section h5+span img {
+	div.creditpage section h5 + span img {
 		width: 125px;
 	}
 
@@ -2383,7 +2368,6 @@ screen and (max-width: 640px) {
 
 /* MOBILE LANDSCAPE*/
 @media only screen and (max-height: 480px) and (orientation: landscape) {
-
 	div.index div.thumbsindex,
 	div.stickyindex,
 	div.index,
@@ -2396,7 +2380,8 @@ screen and (max-width: 640px) {
 		display: block;
 	}
 
-	div#mobile-preview p {}
+	div#mobile-preview p {
+	}
 
 	div#mobile-preview img {
 		display: none;
@@ -2437,14 +2422,13 @@ screen and (max-width: 640px) {
 	margin-top: 1rem;
 }
 
-
 .loading {
 	width: 100%;
 	height: 15px;
 	position: absolute;
 	bottom: 0;
 	margin: 0;
-	background: #E0FFE1;
+	background: #e0ffe1;
 }
 
 .loadingbar {
