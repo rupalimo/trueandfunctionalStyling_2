@@ -33,9 +33,7 @@
 	box-sizing: border-box;
 }
 
-#hidden {
-	display: none;
-}
+
 
 html,
 body {
@@ -311,7 +309,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(1):hover ~ .thumbsindex .thumbs:nth-of-type(1) a {
+.index .row:nth-child(1):hover~.thumbsindex .thumbs:nth-of-type(1) a {
 	border: 1.5px outset var(--green-color);
 
 	position: relative;
@@ -337,7 +335,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(2):hover ~ .thumbsindex .thumbs:nth-child(2) a {
+.index .row:nth-child(2):hover~.thumbsindex .thumbs:nth-child(2) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -362,7 +360,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(3):hover ~ .thumbsindex .thumbs:nth-child(3) a {
+.index .row:nth-child(3):hover~.thumbsindex .thumbs:nth-child(3) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -387,7 +385,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(4):hover ~ .thumbsindex .thumbs:nth-child(4) a {
+.index .row:nth-child(4):hover~.thumbsindex .thumbs:nth-child(4) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -412,7 +410,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(5):hover ~ .thumbsindex .thumbs:nth-child(5) a {
+.index .row:nth-child(5):hover~.thumbsindex .thumbs:nth-child(5) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -437,7 +435,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(6):hover ~ .thumbsindex .thumbs:nth-child(6) a {
+.index .row:nth-child(6):hover~.thumbsindex .thumbs:nth-child(6) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -462,7 +460,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(7):hover ~ .thumbsindex .thumbs:nth-child(7) a {
+.index .row:nth-child(7):hover~.thumbsindex .thumbs:nth-child(7) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -487,7 +485,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(8):hover ~ .thumbsindex .thumbs:nth-child(8) a {
+.index .row:nth-child(8):hover~.thumbsindex .thumbs:nth-child(8) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -512,7 +510,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(9):hover ~ .thumbsindex .thumbs:nth-child(9) a {
+.index .row:nth-child(9):hover~.thumbsindex .thumbs:nth-child(9) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -537,7 +535,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(10):hover ~ .thumbsindex .thumbs:nth-child(10) a {
+.index .row:nth-child(10):hover~.thumbsindex .thumbs:nth-child(10) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -562,7 +560,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(11):hover ~ .thumbsindex .thumbs:nth-child(11) a {
+.index .row:nth-child(11):hover~.thumbsindex .thumbs:nth-child(11) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -587,7 +585,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(12):hover ~ .thumbsindex .thumbs:nth-child(12) a {
+.index .row:nth-child(12):hover~.thumbsindex .thumbs:nth-child(12) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -612,7 +610,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(13):hover ~ .thumbsindex .thumbs:nth-child(13) a {
+.index .row:nth-child(13):hover~.thumbsindex .thumbs:nth-child(13) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -637,7 +635,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(14):hover ~ .thumbsindex .thumbs:nth-child(14) a {
+.index .row:nth-child(14):hover~.thumbsindex .thumbs:nth-child(14) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -662,7 +660,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(15):hover ~ .thumbsindex .thumbs:nth-child(15) a {
+.index .row:nth-child(15):hover~.thumbsindex .thumbs:nth-child(15) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -687,7 +685,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(16):hover ~ .thumbsindex .thumbs:nth-child(16) a {
+.index .row:nth-child(16):hover~.thumbsindex .thumbs:nth-child(16) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -712,7 +710,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(17):hover ~ .thumbsindex .thumbs:nth-child(17) a {
+.index .row:nth-child(17):hover~.thumbsindex .thumbs:nth-child(17) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -737,7 +735,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(18):hover ~ .thumbsindex .thumbs:nth-child(18) a {
+.index .row:nth-child(18):hover~.thumbsindex .thumbs:nth-child(18) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -762,7 +760,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(19):hover ~ .thumbsindex .thumbs:nth-child(19) a {
+.index .row:nth-child(19):hover~.thumbsindex .thumbs:nth-child(19) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -787,7 +785,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(20):hover ~ .thumbsindex .thumbs:nth-child(20) a {
+.index .row:nth-child(20):hover~.thumbsindex .thumbs:nth-child(20) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -812,7 +810,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(21):hover ~ .thumbsindex .thumbs:nth-child(21) a {
+.index .row:nth-child(21):hover~.thumbsindex .thumbs:nth-child(21) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -837,7 +835,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(22):hover ~ .thumbsindex .thumbs:nth-child(22) a {
+.index .row:nth-child(22):hover~.thumbsindex .thumbs:nth-child(22) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -862,7 +860,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(23):hover ~ .thumbsindex .thumbs:nth-child(23) a {
+.index .row:nth-child(23):hover~.thumbsindex .thumbs:nth-child(23) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -887,7 +885,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(24):hover ~ .thumbsindex .thumbs:nth-child(24) a {
+.index .row:nth-child(24):hover~.thumbsindex .thumbs:nth-child(24) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -912,7 +910,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(25):hover ~ .thumbsindex .thumbs:nth-child(25) a {
+.index .row:nth-child(25):hover~.thumbsindex .thumbs:nth-child(25) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -937,7 +935,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(26):hover ~ .thumbsindex .thumbs:nth-child(26) a {
+.index .row:nth-child(26):hover~.thumbsindex .thumbs:nth-child(26) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -962,7 +960,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(27):hover ~ .thumbsindex .thumbs:nth-child(27) a {
+.index .row:nth-child(27):hover~.thumbsindex .thumbs:nth-child(27) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -987,7 +985,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(28):hover ~ .thumbsindex .thumbs:nth-child(28) a {
+.index .row:nth-child(28):hover~.thumbsindex .thumbs:nth-child(28) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1012,7 +1010,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(29):hover ~ .thumbsindex .thumbs:nth-child(29) a {
+.index .row:nth-child(29):hover~.thumbsindex .thumbs:nth-child(29) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1037,7 +1035,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(30):hover ~ .thumbsindex .thumbs:nth-child(30) a {
+.index .row:nth-child(30):hover~.thumbsindex .thumbs:nth-child(30) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1062,7 +1060,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(31):hover ~ .thumbsindex .thumbs:nth-child(31) a {
+.index .row:nth-child(31):hover~.thumbsindex .thumbs:nth-child(31) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1087,7 +1085,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(32):hover ~ .thumbsindex .thumbs:nth-child(32) a {
+.index .row:nth-child(32):hover~.thumbsindex .thumbs:nth-child(32) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1112,7 +1110,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(33):hover ~ .thumbsindex .thumbs:nth-child(33) a {
+.index .row:nth-child(33):hover~.thumbsindex .thumbs:nth-child(33) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1137,7 +1135,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(34):hover ~ .thumbsindex .thumbs:nth-child(34) a {
+.index .row:nth-child(34):hover~.thumbsindex .thumbs:nth-child(34) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1162,7 +1160,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(35):hover ~ .thumbsindex .thumbs:nth-child(35) a {
+.index .row:nth-child(35):hover~.thumbsindex .thumbs:nth-child(35) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1187,7 +1185,7 @@ a:hover {
 	}
 }
 
-.index .row:nth-child(36):hover ~ .thumbsindex .thumbs:nth-child(36) a {
+.index .row:nth-child(36):hover~.thumbsindex .thumbs:nth-child(36) a {
 	border: 1.5px outset var(--green-color);
 	position: relative;
 
@@ -1554,8 +1552,7 @@ div.item_6 div button:nth-of-type(2) i {
 	vertical-align: sub;
 }
 
-div.item_1 #upload {
-}
+div.item_1 #upload {}
 
 #subduedvideo {
 	justify-self: flex-end;
@@ -1602,7 +1599,7 @@ div.item_2 span img:nth-of-type(2) {
 	z-index: 2;
 }
 
-div.item_2 span img + img {
+div.item_2 span img+img {
 	margin-left: -125px;
 }
 
@@ -1615,7 +1612,7 @@ div.item_8 a img:hover {
 	transition: 0.175s linear;
 }
 
-div.item_2 div + img {
+div.item_2 div+img {
 	height: 100%;
 	width: auto;
 	padding: 1em 0;
@@ -1724,7 +1721,7 @@ div.item_7 div.flipbook-viewport {
 	padding: 1em;
 }
 
-div.item_7 div.flipbook-viewport + img {
+div.item_7 div.flipbook-viewport+img {
 	transform: translateX(-1.5em);
 }
 
@@ -1886,7 +1883,7 @@ div.item_9 img:nth-child(3) {
 	padding: 0 1em;
 }
 
-.audio-player .controls > * {
+.audio-player .controls>* {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1913,7 +1910,7 @@ div.item_9 img:nth-child(3) {
 	display: flex;
 }
 
-.audio-player .controls .time > * {
+.audio-player .controls .time>* {
 	padding: 2px;
 }
 
@@ -1933,7 +1930,8 @@ div.fixed nav {
 }
 
 nav a,
-#indexToggle, #indexToggle2, 
+#indexToggle,
+#indexToggle2,
 #indexClose {
 	font-family: var(--serif-text);
 	height: 2em;
@@ -1966,7 +1964,8 @@ nav a:nth-child(2) {
 	transform: translateX(-1px);
 }
 
-#indexToggle, #indexToggle2, 
+#indexToggle,
+#indexToggle2,
 #indexClose {
 	border-radius: 0;
 	padding: 0.1em 0.85em 0.25em;
@@ -1975,12 +1974,14 @@ nav a:nth-child(2) {
 	border: 1px solid;
 }
 
-#indexToggle, #indexToggle2 {
+#indexToggle,
+#indexToggle2 {
 	border-color: var(--green-color);
 	font-size: inherit;
 }
 
-#indexToggle:hover, #indexToggle2:hover {
+#indexToggle:hover,
+#indexToggle2:hover {
 	color: var(--green-color);
 }
 
@@ -2027,6 +2028,7 @@ nav a:nth-child(2) {
 	width: 50px;
 	border-color: #fff;
 }
+
 .creditpage section #indexClose:hover {
 	border-color: var(--green-color);
 	color: var(--green-color);
@@ -2105,7 +2107,7 @@ nav a:nth-child(2) {
 	margin-top: 4em;
 }
 
-.creditpage h5 + p {
+.creditpage h5+p {
 	margin: 0;
 }
 
@@ -2128,9 +2130,9 @@ nav a:nth-child(2) {
 	margin: 1em 2em 1em 0.5em;
 }
 
-.creditpage a em + i,
+.creditpage a em+i,
 .creditpage a:hover,
-.creditpage a:hover em + i {
+.creditpage a:hover em+i {
 	color: #fff;
 	/* font-weight: 400; */
 }
@@ -2302,7 +2304,9 @@ lazyload class logic */
 }
 
 /* MOBILE PORTRAIT */
-@media only screen and (orientation: portrait), screen and (max-width: 640px) {
+@media only screen and (orientation: portrait),
+screen and (max-width: 640px) {
+
 	div.stickyindex,
 	div.index,
 	div.audio-player,
@@ -2352,7 +2356,7 @@ lazyload class logic */
 		margin: 0;
 		padding: 1em;
 		height: fit-content;
-	
+
 	}
 
 	div.creditpage a {
@@ -2365,7 +2369,7 @@ lazyload class logic */
 
 	div.creditpage section {
 		padding: 1em;
-			min-width: 100%;
+		min-width: 100%;
 	}
 
 	div.creditpage section div.titleblock {
@@ -2389,11 +2393,11 @@ lazyload class logic */
 		margin-top: 4em;
 	}
 
-	div.creditpage section h5 + span {
+	div.creditpage section h5+span {
 		height: 120px;
 	}
 
-	div.creditpage section h5 + span img {
+	div.creditpage section h5+span img {
 		width: 125px;
 	}
 
@@ -2420,6 +2424,7 @@ lazyload class logic */
 
 /* MOBILE LANDSCAPE*/
 @media only screen and (max-height: 480px) and (orientation: landscape) {
+
 	div.index div.thumbsindex,
 	div.stickyindex,
 	div.index,
@@ -2444,6 +2449,7 @@ lazyload class logic */
 		flex-direction: column;
 		align-items: center;
 	}
+
 	div#mobile-preview section p {
 		padding: 0 0.5em;
 	}
