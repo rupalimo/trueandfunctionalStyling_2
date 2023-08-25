@@ -1973,6 +1973,7 @@ nav a:nth-child(2) {
 
 #indexToggle {
 	border-color: var(--green-color);
+	font-size: inherit;
 }
 
 #indexToggle:hover {
@@ -2297,8 +2298,42 @@ lazyload class logic */
 	div.stickyindex,
 	div.index,
 	div.audio-player,
-	div.item {
+	div.item,
+	div.fixed nav:first-of-type {
 		display: none;
+	}
+
+	div#mobile-preview {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+	#mobile-preview nav {
+		display: inline-flex;
+		padding: 1em;
+		justify-content: space-between;	
+	}
+
+	div#mobile-preview nav a,
+	div#mobile-preview nav button {
+		background-color: #ffffff00;
+		font-size: 1em;
+		padding: 0;
+		width: 120px;
+		margin: 0;
+	}
+
+	div#mobile-preview section {
+		display: inline-flex;
+		flex-direction: column;
+		max-width: 480px;
+		padding: 45px 8px 8px 8px;
+	}
+
+	div#mobile-preview section img {
+		width: 100%;
+		max-width: 480px;
 	}
 
 	div.creditpage,
@@ -2354,18 +2389,8 @@ lazyload class logic */
 		width: 125px;
 	}
 
-	div#mobile-preview {
-		display: block;
-	}
-
-	div#mobile-preview img {
-		width: 100%;
-		max-width: 350px;
-		margin: 0 auto;
-	}
-
 	div#mobile-preview p:first-of-type {
-		border-top: 1px dotted var(--green-color);
+		border-top: 2px dotted var(--green-color);
 		padding-top: 1em;
 		font-family: var(--body-text);
 	}
