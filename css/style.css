@@ -2318,7 +2318,6 @@ lazyload class logic */
 	div#mobile-preview nav a,
 	div#mobile-preview nav button {
 		background-color: #ffffff00;
-		font-size: 1em;
 		padding: 0;
 		width: 120px;
 		margin: 0;
@@ -2397,6 +2396,7 @@ lazyload class logic */
 
 	div#mobile-preview p:first-of-type em {
 		font-family: var(--body-text);
+		font-style: normal;
 	}
 
 	div#mobile-preview p {
