@@ -2321,9 +2321,9 @@ lazyload class logic */
 /* MOBILE PORTRAIT */
 @media only screen and (orientation: portrait), screen and (max-width: 480px) {
 	body {
-		touch-action: pan-x;
+		/* touch-action: pan-x;
 		touch-action: pan-up;
-		touch-action: pan-down;
+		touch-action: pan-down; */
 	}
 
 	div.stickyindex,
@@ -2504,11 +2504,10 @@ lazyload class logic */
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
-display: flex;
-flex-direction: column;
-    align-items: center;
-    justify-content: center;
-		
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /* .preloader {
@@ -2520,7 +2519,6 @@ flex-direction: column;
 	margin: auto;
 	margin-left: -3em;
 } */
-
 
 .preloader p {
 	font-family: var(--serif-text);
