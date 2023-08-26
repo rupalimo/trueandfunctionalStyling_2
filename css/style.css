@@ -1933,7 +1933,8 @@ div.fixed nav {
 }
 
 nav a,
-#indexToggle, #indexToggle2, 
+#indexToggle,
+#indexToggle2,
 #indexClose {
 	font-family: var(--serif-text);
 	height: 2em;
@@ -1966,7 +1967,8 @@ nav a:nth-child(2) {
 	transform: translateX(-1px);
 }
 
-#indexToggle, #indexToggle2, 
+#indexToggle,
+#indexToggle2,
 #indexClose {
 	border-radius: 0;
 	padding: 0.1em 0.85em 0.25em;
@@ -1975,12 +1977,14 @@ nav a:nth-child(2) {
 	border: 1px solid;
 }
 
-#indexToggle, #indexToggle2 {
+#indexToggle,
+#indexToggle2 {
 	border-color: var(--green-color);
 	font-size: inherit;
 }
 
-#indexToggle:hover, #indexToggle2:hover {
+#indexToggle:hover,
+#indexToggle2:hover {
 	color: var(--green-color);
 }
 
@@ -2268,15 +2272,7 @@ lazyload class logic */
 	}
 }
 
-/* #draggable {}
-
-	.goat_img {} */
-
 @media (max-height: 525px) {
-	body {
-		touch-action: pan-y;
-	}
-
 	.stickyindex,
 	.index {
 		font-size: 0.8rem;
@@ -2299,10 +2295,34 @@ lazyload class logic */
 	div.index div.thumbsindex {
 		display: none;
 	}
+
+	#mobile-preview nav {
+		display: inline-flex;
+		padding: 1em;
+		justify-content: space-between;
+	}
+
+	div#mobile-preview nav a,
+	div#mobile-preview nav button {
+		background-color: #ffffff00;
+		padding: 0;
+		width: 120px;
+		margin: 0;
+	}
+
+	div#mobile-preview nav button {
+		color: var(--text-color);
+	}
 }
 
 /* MOBILE PORTRAIT */
 @media only screen and (orientation: portrait), screen and (max-width: 640px) {
+	body {
+		touch-action: pan-x;
+		touch-action: pan-up;
+		touch-action: pan-down;
+	}
+
 	div.stickyindex,
 	div.index,
 	div.audio-player,
@@ -2320,17 +2340,23 @@ lazyload class logic */
 	#mobile-preview nav {
 		display: inline-flex;
 		padding: 1em;
-		justify-content: space-between;
+		justify-content: flex-start;
+	}
+
+	div#mobile-preview nav a {
+		padding: 0 1em 0em 0em;
+		width: auto;
 	}
 
 	div#mobile-preview nav a,
 	div#mobile-preview nav button {
 		background-color: #ffffff00;
-		padding: 0;
-		width: 120px;
 		margin: 0;
 	}
 
+	div#mobile-preview nav button {
+		margin-left: auto;
+	}
 	div#mobile-preview section {
 		display: inline-flex;
 		flex-direction: column;
@@ -2352,7 +2378,6 @@ lazyload class logic */
 		margin: 0;
 		padding: 1em;
 		height: fit-content;
-	
 	}
 
 	div.creditpage a {
@@ -2365,7 +2390,7 @@ lazyload class logic */
 
 	div.creditpage section {
 		padding: 1em;
-			min-width: 100%;
+		min-width: 100%;
 	}
 
 	div.creditpage section div.titleblock {
