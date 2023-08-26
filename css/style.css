@@ -2334,6 +2334,10 @@ lazyload class logic */
 		display: none;
 	}
 
+	div.fixed {
+		overflow-x: auto;
+	}
+	
 	div#mobile-preview {
 		display: flex;
 		flex-direction: column;
