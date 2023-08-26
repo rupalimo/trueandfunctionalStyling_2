@@ -2565,3 +2565,9 @@ lazyload class logic */
 		width: 100%;
 	}
 }
+
+/* keep on bottom */
+html {
+	visibility: visible;
+	opacity: 1;
+  }
