@@ -2313,10 +2313,13 @@ lazyload class logic */
 	div#mobile-preview nav button {
 		color: var(--text-color);
 	}
+	div#mobile-preview section p {
+		text-align: justify;
+	}
 }
 
 /* MOBILE PORTRAIT */
-@media only screen and (orientation: portrait), screen and (max-width: 640px) {
+@media only screen and (orientation: portrait), screen and (max-width: 480px) {
 	body {
 		touch-action: pan-x;
 		touch-action: pan-up;
@@ -2499,12 +2502,25 @@ lazyload class logic */
 .preloader {
 	z-index: 99;
 	position: absolute;
+	width: 100vw;
+	height: 100vh;
+display: flex;
+flex-direction: column;
+    align-items: center;
+    justify-content: center;
+		
+}
+
+/* .preloader {
+	z-index: 99;
+	position: absolute;
 	width: 10em;
 	top: 45%;
 	left: 50%;
 	margin: auto;
 	margin-left: -3em;
-}
+} */
+
 
 .preloader p {
 	font-family: var(--serif-text);
