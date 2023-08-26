@@ -1765,6 +1765,12 @@ box-shadow: var(--green-shadow);
 	max-width: 30vh;
 }
 
+#draggable:hover {
+
+	animation: shake 0.05s;
+	animation-iteration-count: infinite;
+}
+
 .goat_img {
 	background-image: url('../assets/img/7232/goat2_0.png');
 	width: 20em;
@@ -2337,7 +2343,7 @@ lazyload class logic */
 	div.fixed {
 		overflow-x: auto;
 	}
-	
+
 	div#mobile-preview {
 		display: flex;
 		flex-direction: column;
@@ -2570,8 +2576,22 @@ lazyload class logic */
 	}
 }
 
+@keyframes shake {
+	0% {
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+
+	50% {
+		transform: translate(0px, 4px) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(0px, -4px) rotate(0deg);
+	}
+}
+
 /* keep on bottom */
 html {
 	visibility: visible;
 	opacity: 1;
-  }
+}
