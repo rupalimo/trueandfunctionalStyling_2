@@ -1722,6 +1722,7 @@ div.item_7 div {
 
 div.item_7 div.flipbook-viewport {
 	padding: 1em;
+	cursor: pointer;
 }
 
 div.item_7 div.flipbook-viewport + img {
